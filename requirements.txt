@@ -1,0 +1,14 @@
+# torch: install the wheel matching your CUDA first, e.g.
+#   pip install torch --index-url https://download.pytorch.org/whl/cu126
+torch>=2.4
+transformers>=4.45
+accelerate
+numpy
+pandas
+matplotlib
+pyyaml
+pytest
+# optional, only if load_in_4bit: true
+# bitsandbytes
+# optional, only for --clearml
+# clearml

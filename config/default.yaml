@@ -1,0 +1,40 @@
+# Phase 1 must confirm model_id. Qwen2.5-1.5B-Instruct is the recommended default
+# (RoPE, instruct, 1.5B, native 32k ctx) so the pipeline is runnable end to end.
+model_id: Qwen/Qwen2.5-1.5B-Instruct
+revision: main
+dtype: auto                    # auto = bfloat16 if GPU supports it, else float16
+load_in_4bit: false            # enable only if VRAM-bound
+attn_implementation: sdpa
+
+lengths: [1024, 2048, 4096]    # never exceed the model's native context
+n_examples: 50
+n_bands: 8
+seed: 1234
+depth_fraction: 0.5            # fixed needle depth across the whole sweep
+length_tolerance: 0.02         # tokenized prompt must be within ±2% of target
+
+filler: synthetic              # synthetic sentence pool (no downloads)
+
+tasks: [s_niah, mk_niah, vt, fwe]
+
+task_params:
+  mk_niah: {n_distractors: 3}
+  vt: {n_hops: 4, ordered: false}
+  fwe: {alpha: 2.0, vocab_size: 500}
+
+intervention:
+  mode: compress               # "compress" (primary) or "zero" (extreme control)
+  compress_factor: 8.0
+
+gate_g2:                       # shortest length must exceed these
+  s_niah: 0.60
+  vt: 0.30
+  fwe: 0.30
+
+bootstrap: {n_resamples: 1000, ci: 0.95}
+results_dir: results
+figures_dir: figures
+
+clearml:
+  project: Blue-2.0
+  task_name: rope_freq_ablation   # stage suffix added: rope_freq_ablation_baseline / _sweep
