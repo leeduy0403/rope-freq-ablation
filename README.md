@@ -47,7 +47,7 @@ python -m src.eval.runner --stage sweep    --tasks s_niah --lengths 1024 --n 5 -
 
 ## Design notes
 
-- **Tasks** (`src/tasks/`): `s_niah`, `mk_niah` (3 distractors), `vt` (4-hop chain, statements scattered in random order), `fwe` (Zeta α=2 coded words, top-3). Pure Python, synthetic filler (50 neutral sentences, fixed seed). Prompt length is measured with the model's own tokenizer *after* the chat template, ±2%.
+- **Tasks** (`src/tasks/`): `s_niah`, `mk_niah` (3 distractors), `vt` (4-hop chain, statements scattered in random order), `fwe` (Zeta α=3 coded words, top-3; α=2 was too hard for the 1.5B model, see the fwe probe cell). Pure Python, synthetic filler (50 neutral sentences, fixed seed). Prompt length is measured with the model's own tokenizer *after* the chat template, ±2%.
 - **Scoring**: niah = exact number anywhere in output; vt / fwe = exact set match (no extras).
 - **Same examples for every band**: example `k` uses seed `seed*1000+k`, independent of band → per-band differences are paired.
 - **Needle depth** fixed at 0.5 for the target needle.

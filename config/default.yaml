@@ -20,7 +20,7 @@ tasks: [s_niah, mk_niah, vt, fwe]
 task_params:
   mk_niah: {n_distractors: 3}
   vt: {n_hops: 4, ordered: false}
-  fwe: {alpha: 2.0, vocab_size: 500}
+  fwe: {alpha: 3.0, vocab_size: 500}  # 2.0 failed G2 on Qwen2.5-1.5B (probe: results/<model>/fwe_alpha.json)
 
 intervention:
   mode: compress               # "compress" (primary) or "zero" (extreme control)
