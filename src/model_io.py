@@ -1,6 +1,4 @@
 """Model loading and greedy generation."""
-import inspect as _inspect
-
 import torch
 import transformers
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -18,9 +16,9 @@ def load_model(cfg):
     dtype = resolve_dtype(cfg.get("dtype", "auto"))
     kw = dict(revision=cfg.get("revision", "main"),
               attn_implementation=cfg.get("attn_implementation", "sdpa"))
-    # transformers renamed torch_dtype -> dtype
-    params = _inspect.signature(transformers.PreTrainedModel.from_pretrained).parameters
-    kw["dtype" if "dtype" in params else "torch_dtype"] = dtype
+    # transformers renamed torch_dtype -> dtype in 4.56
+    new_api = tuple(int(x) for x in transformers.__version__.split(".")[:2]) >= (4, 56)
+    kw["dtype" if new_api else "torch_dtype"] = dtype
     if cfg.get("load_in_4bit"):
         from transformers import BitsAndBytesConfig
         kw["quantization_config"] = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_compute_dtype=dtype)
