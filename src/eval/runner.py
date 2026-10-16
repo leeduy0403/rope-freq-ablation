@@ -118,6 +118,7 @@ class Runner:
 
 def run(cfg, stage, tasks, lengths, n, bands=None, mode=None, factor=None, force=False):
     runner = None
+    chash = config_hash(cfg, HASH_KEYS)
     d = stage_dir(cfg, stage, mode, factor)
     band_list = [None] if stage == "baseline" else [None] + list(bands)
     out = []
@@ -127,6 +128,10 @@ def run(cfg, stage, tasks, lengths, n, bands=None, mode=None, factor=None, force
                 p = cell_path(d, t, L, b, stage)
                 if p.exists() and not force:
                     res = json.loads(p.read_text())
+                    if res["config_hash"] != chash or res["n_examples"] != n:
+                        raise SystemExit(f"{p} was made with a different config "
+                                         f"(hash {res['config_hash']} vs {chash}, n {res['n_examples']} vs {n}). "
+                                         "Use another --results-dir, or --force to overwrite.")
                     print(f"skip  {p}  acc={res['accuracy']:.3f}")
                 else:
                     runner = runner or Runner(cfg)
@@ -219,12 +224,14 @@ def main():
     ap.add_argument("--mode", choices=["compress", "zero"])
     ap.add_argument("--factor", type=float)
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--set", nargs="+", default=[], metavar="KEY=VAL",
+                    help="dotted config override, e.g. task_params.fwe.alpha=3.0")
     ap.add_argument("--no-gate", action="store_true", help="do not exit non-zero on a failed gate")
     ap.add_argument("--clearml", action="store_true", help="track this run in ClearML")
     ap.add_argument("--clearml-queue", help="enqueue on this ClearML queue instead of running here")
     a = ap.parse_args()
 
-    cfg = load_config(a.config, {"model_id": a.model_id, "results_dir": a.results_dir})
+    cfg = load_config(a.config, {"model_id": a.model_id, "results_dir": a.results_dir}, a.set)
     tasks = a.tasks or cfg["tasks"]
     lengths = a.lengths or cfg["lengths"]
     n = a.n or cfg["n_examples"]

@@ -40,3 +40,9 @@ def test_profile_table_shape():
     df = compression_profile(D, BASE, L, 8)
     assert len(df) == 8 * 3 * 3
     assert (df.compression_bits >= -1e-9).all()
+
+
+def test_dotted_config_override():
+    from src.config import load_config
+    cfg = load_config("config/default.yaml", sets=["task_params.fwe.alpha=3.0", "n_bands=4"])
+    assert cfg["task_params"]["fwe"]["alpha"] == 3.0 and cfg["n_bands"] == 4

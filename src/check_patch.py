@@ -38,8 +38,9 @@ def main():
     ap.add_argument("--tasks", nargs="+", default=["s_niah"])
     ap.add_argument("--length", type=int, help="default: shortest configured length")
     ap.add_argument("--n", type=int, default=20)
+    ap.add_argument("--set", nargs="+", default=[], metavar="KEY=VAL")
     a = ap.parse_args()
-    cfg = load_config(a.config, {"model_id": a.model_id, "results_dir": a.results_dir})
+    cfg = load_config(a.config, {"model_id": a.model_id, "results_dir": a.results_dir}, a.set)
     L = a.length or min(cfg["lengths"])
     r = Runner(cfg)
     P, m, tok = r.patcher, r.model, r.tok

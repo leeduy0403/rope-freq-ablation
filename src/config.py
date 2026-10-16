@@ -7,12 +7,20 @@ from pathlib import Path
 import yaml
 
 
-def load_config(path="config/default.yaml", overrides=None):
+def load_config(path="config/default.yaml", overrides=None, sets=None):
+    """overrides: {key: value} (None = keep). sets: ["a.b.c=yaml_value", ...] dotted overrides."""
     with open(path) as f:
         cfg = yaml.safe_load(f)
     for k, v in (overrides or {}).items():
         if v is not None:
             cfg[k] = v
+    for item in sets or []:
+        key, _, raw = item.partition("=")
+        node = cfg
+        *parents, leaf = key.split(".")
+        for p in parents:
+            node = node.setdefault(p, {})
+        node[leaf] = yaml.safe_load(raw)
     return cfg
 
 
