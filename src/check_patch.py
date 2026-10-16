@@ -83,6 +83,8 @@ def main():
     out = f"{cfg['results_dir']}/{model_slug(cfg['model_id'])}/g3_patch_check.json"
     write_json(out, rep)
     print(f"saved -> {out}")
+    if not rep["gate_g3"]:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

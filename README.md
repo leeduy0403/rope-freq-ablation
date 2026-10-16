@@ -18,7 +18,7 @@ pytest -q                               # CPU-only unit tests (tiny random Llama
 
 ## Running on Kaggle
 
-Open `notebooks/kaggle_run.ipynb` on Kaggle (*File → Import Notebook*), set **GPU T4 x2** and **Internet On**, then run cells top to bottom. Long phases: *Save Version → Save & Run All* (background, ≤12 h). To resume, attach the previous version's output as input — cell 2 restores `results/` and finished cells are skipped. T4 has no native bf16, so `dtype: auto` picks fp16.
+Open `notebooks/kaggle_run.ipynb` on Kaggle (*File → Import Notebook*), set **GPU T4 x2** and **Internet On**, then run cells top to bottom — or *Run All*: every gate exits non-zero on failure and the notebook stops there. `compress_factor` is chosen automatically in the calibration cell (largest per-band accuracy spread; recorded in `results/<model>/calibration.json`). Long phases: *Save Version → Save & Run All* (background, ≤12 h). To resume, attach the previous version's output as input — cell 2 restores `results/` and finished cells are skipped. T4 has no native bf16, so `dtype: auto` picks fp16.
 
 ## Pipeline (phase by phase — do not skip a failed gate)
 

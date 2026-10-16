@@ -219,6 +219,7 @@ def main():
     ap.add_argument("--mode", choices=["compress", "zero"])
     ap.add_argument("--factor", type=float)
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--no-gate", action="store_true", help="do not exit non-zero on a failed gate")
     ap.add_argument("--clearml", action="store_true", help="track this run in ClearML")
     ap.add_argument("--clearml-queue", help="enqueue on this ClearML queue instead of running here")
     a = ap.parse_args()
@@ -239,13 +240,15 @@ def main():
         out = stage_dir(cfg, "baseline") / "baseline_table.csv"
         df.to_csv(out, index=False)
         print(f"saved -> {out}\n")
-        gate_g2(cfg, df)
+        gate_ok = gate_g2(cfg, df)
     else:
         print()
-        gate_g4(cfg, results)
+        gate_ok = gate_g4(cfg, results)
     if cm_task:
         report_clearml(cm_task, cfg, a.stage, results, df, mode, factor)
         cm_task.close()
+    if not gate_ok and not a.no_gate:
+        raise SystemExit(2)
 
 
 if __name__ == "__main__":
