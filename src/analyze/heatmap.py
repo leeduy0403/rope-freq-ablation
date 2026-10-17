@@ -6,6 +6,7 @@ import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import numpy as np
 
 from src.analyze.common import load_importance
 from src.config import load_config, model_slug
@@ -16,9 +17,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--config", default="config/default.yaml")
     ap.add_argument("--model-id")
-    ap.add_argument("--tag", default="compress_f8", help="sweep subdir, e.g. compress_f8 or zero")
+    ap.add_argument("--tag", help="sweep subdir, e.g. compress_f32 or zero (default: from config)")
     a = ap.parse_args()
     cfg = load_config(a.config, {"model_id": a.model_id})
+    a.tag = a.tag or f"compress_f{cfg['intervention']['compress_factor']:g}"
     df = load_importance(cfg["results_dir"], cfg["model_id"], a.tag)
     slug = model_slug(cfg["model_id"])
     out_csv = Path(cfg["results_dir"]) / slug / f"importance_{a.tag}.csv"
@@ -32,14 +34,17 @@ def main():
     fig, axes = plt.subplots(len(lengths), 1, figsize=(1.1 * len(labels) + 2, 1.0 * len(tasks) * len(lengths) + 1.5),
                              squeeze=False)
     for ax, L in zip(axes[:, 0], lengths):
-        m = (df[df.length == L].pivot(index="task", columns="band", values="drop").reindex(tasks))
+        sub = df[df.length == L]
+        m = sub.pivot(index="task", columns="band", values="drop").reindex(tasks)
+        sig = sub.pivot(index="task", columns="band", values="significant").reindex(tasks)
         im = ax.imshow(m.values, cmap="RdBu_r", vmin=-vmax, vmax=vmax, aspect="auto")
-        for (i, j), v in __import__("numpy").ndenumerate(m.values):
+        for (i, j), v in np.ndenumerate(m.values):
             if v == v:
-                ax.text(j, i, f"{v:+.2f}", ha="center", va="center", fontsize=8)
+                star = "*" if sig.values[i, j] is True or sig.values[i, j] == 1 else ""
+                ax.text(j, i, f"{v:+.2f}{star}", ha="center", va="center", fontsize=8)
         ax.set_yticks(range(len(tasks)), tasks)
         ax.set_xticks(range(len(labels)), labels, fontsize=7)
-        ax.set_title(f"accuracy drop when band is compressed — length {L}")
+        ax.set_title(f"accuracy drop when band is compressed — length {L}  (* paired 95% CI > 0)")
         fig.colorbar(im, ax=ax, fraction=0.03)
     axes[-1, 0].set_xlabel("band (wavelength range, tokens) — band 0 = highest frequency")
     fig.tight_layout()

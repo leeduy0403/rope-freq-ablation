@@ -24,7 +24,7 @@ task_params:
 
 intervention:
   mode: compress               # "compress" (primary) or "zero" (extreme control)
-  compress_factor: 8.0
+  compress_factor: 32.0         # chosen by calibration (results/<model>/calibration.json)
 
 gate_g2:                       # shortest length must exceed these
   s_niah: 0.60

@@ -58,4 +58,13 @@ python -m src.eval.runner --stage sweep    --tasks s_niah --lengths 1024 --n 5 -
 
 ## Status
 
-See `results/` for what has actually been run. Model choice (`config/default.yaml: model_id`) is provisional until Phase 1 is signed off.
+Run 1 (Kaggle T4, Qwen2.5-1.5B-Instruct, fp16, lengths 1024/2048/4096, n=50, compress factor 32): all gates G0–G4 pass. Results in `results/Qwen__Qwen2.5-1.5B-Instruct/`, figures in `figures/`.
+
+- Band 0 (λ 6–28 tokens): compressing it breaks every task (degenerate output) — model-wide, reported separately.
+- s_niah / mk_niah: no significant dependence on bands 1–7.
+- vt: significant dependence on bands 1–4; fwe: bands 3–4. Band 4 (λ 6k–28k) only matters at 4096 → a band starts to matter once its wavelength approaches the context length.
+- D4 correlations with NTK/YaRN compression are negative (methods compress bands 5–7, which no task uses within ≤4k).
+
+Run 2 (`notebooks/kaggle_long.ipynb`): same setup at 8192 and 16384 to test the wavelength ≈ context-length effect.
+
+Analysis notes: drop CIs are paired bootstrap (same examples in every band); D4 is reported with and without band 0; Spearman is identical across scales for NTK/YaRN by construction; PI is uniform → NaN.

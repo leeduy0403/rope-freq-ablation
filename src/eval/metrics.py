@@ -13,3 +13,14 @@ def bootstrap_ci(correct, n_resamples=1000, ci=0.95, seed=0):
     means = x[rng.integers(0, len(x), size=(n_resamples, len(x)))].mean(axis=1)
     a = (1 - ci) / 2
     return (float(np.quantile(means, a)), float(np.quantile(means, 1 - a)))
+
+
+def paired_bootstrap_ci(base, other, n_resamples=2000, ci=0.95, seed=0):
+    """CI of mean(base - other) resampling examples jointly (same examples in both cells)."""
+    d = np.asarray(base, dtype=float) - np.asarray(other, dtype=float)
+    if len(d) == 0:
+        return (float("nan"), float("nan"))
+    rng = np.random.default_rng(seed)
+    means = d[rng.integers(0, len(d), size=(n_resamples, len(d)))].mean(axis=1)
+    a = (1 - ci) / 2
+    return (float(np.quantile(means, a)), float(np.quantile(means, 1 - a)))
