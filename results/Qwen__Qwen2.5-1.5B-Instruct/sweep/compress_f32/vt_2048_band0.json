@@ -1,0 +1,644 @@
+{
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "dtype": "torch.float16",
+  "versions": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu128",
+    "transformers": "5.16.1",
+    "numpy": "2.1.3",
+    "cuda": "12.8"
+  },
+  "config_hash": "f2f8513420bc",
+  "seed": 1234,
+  "filler": "synthetic",
+  "depth_fraction": 0.5,
+  "rotary_dim": 128,
+  "n_bands": 8,
+  "task": "vt",
+  "task_params": {
+    "n_hops": 4,
+    "ordered": false
+  },
+  "length": 2048,
+  "n_examples": 50,
+  "band": 0,
+  "mode": "compress",
+  "compress_factor": 32.0,
+  "band_dims": [
+    0,
+    8
+  ],
+  "wavelength_range": [
+    6.283185307179586,
+    28.47278098481965
+  ],
+  "accuracy": 0.0,
+  "ci95": [
+    0.0,
+    0.0
+  ],
+  "wall_seconds": 77.82,
+  "examples": [
+    {
+      "i": 0,
+      "correct": false,
+      "pred": " \"VAR2\" is assigned to \"the\" \"VAR\" \"and \"VAR\" \"VAR\" \"VAR\" \"VAR\"VAR\"VAR\"VAR\"VAR\"VAR\"VAR\"VAR",
+      "gold": [
+        "ASVWT",
+        "JZTFZ",
+        "KZLBX",
+        "MKDET"
+      ],
+      "n_tokens": 2044
+    },
+    {
+      "i": 1,
+      "correct": false,
+      "pred": " \"Frost\"",
+      "gold": [
+        "APZJC",
+        "IIKLP",
+        "SPSDF",
+        "TQMUF"
+      ],
+      "n_tokens": 2049
+    },
+    {
+      "i": 2,
+      "correct": false,
+      "pred": " \"painter\" is a short, \" \" \"teacher\".",
+      "gold": [
+        "GYRVA",
+        "LIXBR",
+        "WJBCQ",
+        "WTJUP"
+      ],
+      "n_tokens": 2051
+    },
+    {
+      "i": 3,
+      "correct": false,
+      "pred": " \"Fog8.",
+      "gold": [
+        "BPLVC",
+        "BRSAR",
+        "CMZKK",
+        "PGLKG"
+      ],
+      "n_tokens": 2044
+    },
+    {
+      "i": 4,
+      "correct": false,
+      "pred": " \"apple\" orchard, \" \" \"orchard, \" \" \"plu , \"p, \" \" orch, \" \" orch, \" \" orch, \" \" orch, \" \" orch",
+      "gold": [
+        "JDHFS",
+        "MUDHO",
+        "QJQIB",
+        "WWYNC"
+      ],
+      "n_tokens": 2045
+    },
+    {
+      "i": 5,
+      "correct": false,
+      "pred": " \"orchard\" orchard\" and \"and \"the\" \"plants\" \" \"p\" \"orch\" \"t\" \"orch\" \"orch\" \"orch\" \"orch\" \"",
+      "gold": [
+        "GRJUX",
+        "OCNSK",
+        "PHOUZ",
+        "YXATX"
+      ],
+      "n_tokens": 2043
+    },
+    {
+      "i": 6,
+      "correct": false,
+      "pred": " \"VAR9.",
+      "gold": [
+        "DBGLX",
+        "RJTGT",
+        "RSFBZ",
+        "VTGTV"
+      ],
+      "n_tokens": 2050
+    },
+    {
+      "i": 7,
+      "correct": false,
+      "pred": " \"VAR6.",
+      "gold": [
+        "CQHLE",
+        "FJDHW",
+        "QNDGY",
+        "VULET"
+      ],
+      "n_tokens": 2043
+    },
+    {
+      "i": 8,
+      "correct": false,
+      "pred": " \"wood\" is assigned to the \"the\" and \"reached\".",
+      "gold": [
+        "FRONV",
+        "IRDLB",
+        "TKBXD",
+        "WYYQN"
+      ],
+      "n_tokens": 2042
+    },
+    {
+      "i": 9,
+      "correct": false,
+      "pred": " \"orchard\" orchard\"",
+      "gold": [
+        "BJXRF",
+        "KYSUX",
+        "VTICQ",
+        "WQOEZ"
+      ],
+      "n_tokens": 2048
+    },
+    {
+      "i": 10,
+      "correct": false,
+      "pred": " \"varied\" is equal to \"the\" \"A\" and \"value\" \"4\" \"3\" \"and \"neighbours\" \"shared\"with\" \"their\"colors\"each",
+      "gold": [
+        "BMMUR",
+        "IKJRH",
+        "SADCW",
+        "WTSAR"
+      ],
+      "n_tokens": 2043
+    },
+    {
+      "i": 11,
+      "correct": false,
+      "pred": " \"Frost\"",
+      "gold": [
+        "GDIVM",
+        "JRZAA",
+        "PRFGM",
+        "YEKMV"
+      ],
+      "n_tokens": 2045
+    },
+    {
+      "i": 12,
+      "correct": false,
+      "pred": " \"VAR1\" is assigned to \"the\" \"A\" and \"and\" \" \"the\" \"the\" \"the\" \"the\" \"the\" \"the\" \"the\" \"",
+      "gold": [
+        "IFIOP",
+        "NEQAI",
+        "URGDY",
+        "XNXBM"
+      ],
+      "n_tokens": 2049
+    },
+    {
+      "i": 13,
+      "correct": false,
+      "pred": " \"snow\" is the 1 the 1.",
+      "gold": [
+        "DXBUA",
+        "LCFMD",
+        "VSUVC",
+        "ZLJGU"
+      ],
+      "n_tokens": 2051
+    },
+    {
+      "i": 14,
+      "correct": false,
+      "pred": " \"VAR1 is assigned to \"The\" and \"the\" \"2\" \" \"and \"The\" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \"",
+      "gold": [
+        "OTKKW",
+        "XISDJ",
+        "YBJNN",
+        "YMKBK"
+      ],
+      "n_tokens": 2051
+    },
+    {
+      "i": 15,
+      "correct": false,
+      "pred": " \"8 the fog, the \" \" \" \"the\" \"and \"the, \" \" \"the\", \"the, \" \"the, \" \"the, \"the, \"the, \"",
+      "gold": [
+        "BTAGM",
+        "OHLDZ",
+        "PLOKN",
+        "WDKDI"
+      ],
+      "n_tokens": 2043
+    },
+    {
+      "i": 16,
+      "correct": false,
+      "pred": " \"varied0\" is assigned to \"the\" and \"value\"0\" .",
+      "gold": [
+        "LMYDR",
+        "QQLPL",
+        "YGPVB",
+        "ZJNGY"
+      ],
+      "n_tokens": 2043
+    },
+    {
+      "i": 17,
+      "correct": false,
+      "pred": " \"VARCEL\" is assigned to \"the\" \"old.",
+      "gold": [
+        "CHEXO",
+        "FNCLS",
+        "HQJRQ",
+        "RWEML"
+      ],
+      "n_tokens": 2045
+    },
+    {
+      "i": 18,
+      "correct": false,
+      "pred": " \"VAR6\" is assigned to the \"VARC6\"6\"6\"6\"6\"6\"6\"6\"6\"6\"6\"6\"6\"6\"6",
+      "gold": [
+        "BWOZM",
+        "CDASL",
+        "LCPGH",
+        "XCXCH"
+      ],
+      "n_tokens": 2043
+    },
+    {
+      "i": 19,
+      "correct": false,
+      "pred": " \"var2\" is equal to \"the\" \"2\" \"and \"the\" \"the\" \"the\" \"the\" \"the\" \"the\" \"the\" \"the\" \"",
+      "gold": [
+        "DOAUY",
+        "KTYTY",
+        "MQKZB",
+        "RJTZP"
+      ],
+      "n_tokens": 2045
+    },
+    {
+      "i": 20,
+      "correct": false,
+      "pred": " \"VAR3.",
+      "gold": [
+        "CUVHA",
+        "QOQAD",
+        "QYINK",
+        "WARDB"
+      ],
+      "n_tokens": 2048
+    },
+    {
+      "i": 21,
+      "correct": false,
+      "pred": " \"the\" the roads, \" \" \"road\", \"roads\".",
+      "gold": [
+        "JXVVT",
+        "LBVJY",
+        "LYORT",
+        "NAAEH"
+      ],
+      "n_tokens": 2048
+    },
+    {
+      "i": 22,
+      "correct": false,
+      "pred": " \"the\" the value is \"Fogog\".",
+      "gold": [
+        "ERHRU",
+        "HTOPL",
+        "UVVPR",
+        "WOHBW"
+      ],
+      "n_tokens": 2045
+    },
+    {
+      "i": 23,
+      "correct": false,
+      "pred": " \"VAR5\" is assigned to \"traveler\".",
+      "gold": [
+        "AYJBN",
+        "JELZK",
+        "UBIWF",
+        "YSNRT"
+      ],
+      "n_tokens": 2051
+    },
+    {
+      "i": 24,
+      "correct": false,
+      "pred": " \"Rain\" is equal to \"and \"the\".",
+      "gold": [
+        "EIQBQ",
+        "GBLRI",
+        "HYQPS",
+        "UNNOL"
+      ],
+      "n_tokens": 2047
+    },
+    {
+      "i": 25,
+      "correct": false,
+      "pred": " \"VAR.",
+      "gold": [
+        "DNBCD",
+        "KARAJ",
+        "UVSWA",
+        "WWHXV"
+      ],
+      "n_tokens": 2051
+    },
+    {
+      "i": 26,
+      "correct": false,
+      "pred": " \"VAR10\" is assigned to \"the\" .",
+      "gold": [
+        "GUUNW",
+        "LHXNY",
+        "LXMPF",
+        "YOFDI"
+      ],
+      "n_tokens": 2052
+    },
+    {
+      "i": 27,
+      "correct": false,
+      "pred": " \"the\" the wind\" \"and \"the\" \"the\" \"the\" \"the\" \"the\"the\" \"the\"the\"the\"the\"the\"the\"the\"",
+      "gold": [
+        "AIOJH",
+        "AUQRT",
+        "CXRSF",
+        "OOKTD"
+      ],
+      "n_tokens": 2053
+    },
+    {
+      "i": 28,
+      "correct": false,
+      "pred": " \"wood\" is the color\".",
+      "gold": [
+        "CIXLQ",
+        "QSWVO",
+        "WFUKF",
+        "XXPXC"
+      ],
+      "n_tokens": 2046
+    },
+    {
+      "i": 29,
+      "correct": false,
+      "pred": " \"traveler\" is assigned to the \"the\"",
+      "gold": [
+        "CRQEO",
+        "EAIZF",
+        "KIXBC",
+        "YKMQJ"
+      ],
+      "n_tokens": 2047
+    },
+    {
+      "i": 30,
+      "correct": false,
+      "pred": " \"Fro the following:\n\n- \"the\" - \"Neighborhoods\" - \"neighborhood\" - \" - \" - \" - \"neighborhood\" - \"neighborhood\" - \"neighbor",
+      "gold": [
+        "NPNRG",
+        "WQQHR",
+        "XIJQD",
+        "ZJWIP"
+      ],
+      "n_tokens": 2045
+    },
+    {
+      "i": 31,
+      "correct": false,
+      "pred": " \"orchards, \" orchard, plums, plums, mus, pl, pl, pl, pl, pl, pl, pl, pl, pl, pl, pl, pl,",
+      "gold": [
+        "HTVWY",
+        "MAXQN",
+        "SUTHK",
+        "SUZHU"
+      ],
+      "n_tokens": 2047
+    },
+    {
+      "i": 32,
+      "correct": false,
+      "pred": " \"the 8 the variable 8 the 8 the 8 the 8 the 8 the 8 the 8 the 8 the 8 the 8 the 8 the ",
+      "gold": [
+        "HUGFX",
+        "KIQBE",
+        "LBHKR",
+        "WUSWW"
+      ],
+      "n_tokens": 2048
+    },
+    {
+      "i": 33,
+      "correct": false,
+      "pred": " \"VAR8.",
+      "gold": [
+        "FCTSJ",
+        "GKMXO",
+        "LUZDB",
+        "UCSRA"
+      ],
+      "n_tokens": 2052
+    },
+    {
+      "i": 34,
+      "correct": false,
+      "pred": " \"Fog8.",
+      "gold": [
+        "GQGUG",
+        "IMCLL",
+        "QTZUP",
+        "QWIWY"
+      ],
+      "n_tokens": 2050
+    },
+    {
+      "i": 35,
+      "correct": false,
+      "pred": " \"the text\" is \"The\" \"and \"the\" \"text\" \"the\" \"the\" \"the\" \"the\"the\" \"the\"the\"the\"the\"the",
+      "gold": [
+        "BASXJ",
+        "EUNSJ",
+        "UQHOM",
+        "VGVRQ"
+      ],
+      "n_tokens": 2052
+    },
+    {
+      "i": 36,
+      "correct": false,
+      "pred": " \n\n1.",
+      "gold": [
+        "HNLWY",
+        "QOUFY",
+        "RCZLO",
+        "UDOGD"
+      ],
+      "n_tokens": 2043
+    },
+    {
+      "i": 37,
+      "correct": false,
+      "pred": " \"var2.",
+      "gold": [
+        "EAGPY",
+        "JBJPA",
+        "MJZJC",
+        "PRENO"
+      ],
+      "n_tokens": 2046
+    },
+    {
+      "i": 38,
+      "correct": false,
+      "pred": " \"the\" the value is \"Neighbours\".",
+      "gold": [
+        "GVVHT",
+        "TWXLF",
+        "UHEDN",
+        "ZRGKI"
+      ],
+      "n_tokens": 2051
+    },
+    {
+      "i": 39,
+      "correct": false,
+      "pred": " \"the\" the 1.",
+      "gold": [
+        "EXYPJ",
+        "HUIPW",
+        "NGOMH",
+        "PCOCC"
+      ],
+      "n_tokens": 2050
+    },
+    {
+      "i": 40,
+      "correct": false,
+      "pred": " \"traveler\" and \"and\"",
+      "gold": [
+        "EZDJE",
+        "QBWTO",
+        "URIDO",
+        "ZTIJF"
+      ],
+      "n_tokens": 2047
+    },
+    {
+      "i": 41,
+      "correct": false,
+      "pred": " \"VAR5\" is assigned to the \"the\".",
+      "gold": [
+        "DJTNF",
+        "DUDUN",
+        "VDGTO",
+        "XIPTW"
+      ],
+      "n_tokens": 2044
+    },
+    {
+      "i": 42,
+      "correct": false,
+      "pred": " \"snow\" is the 8, \" \"the, \" \"the, \"the, \"the,the,the,the,of,of,of,of,of,of,",
+      "gold": [
+        "DDJVT",
+        "GRRUJ",
+        "SWLHX",
+        "SZWJV"
+      ],
+      "n_tokens": 2043
+    },
+    {
+      "i": 43,
+      "correct": false,
+      "pred": " \"VAR1 is assigned to the \"orch\" and \"orchards\".",
+      "gold": [
+        "KAWUO",
+        "PXEWR",
+        "RSKVL",
+        "VFSCH"
+      ],
+      "n_tokens": 2053
+    },
+    {
+      "i": 44,
+      "correct": false,
+      "pred": " \"the\"8 the value8 the text.",
+      "gold": [
+        "CNONB",
+        "EFSYN",
+        "QVDCU",
+        "YRPVZ"
+      ],
+      "n_tokens": 2049
+    },
+    {
+      "i": 45,
+      "correct": false,
+      "pred": " \"library\"old.",
+      "gold": [
+        "GGIXP",
+        "RRCHY",
+        "SGWYH",
+        "ZHLGL"
+      ],
+      "n_tokens": 2046
+    },
+    {
+      "i": 46,
+      "correct": false,
+      "pred": " \"snow\" is the snow.\"",
+      "gold": [
+        "TFSZA",
+        "UYWWT",
+        "VYAVH",
+        "XKCPT"
+      ],
+      "n_tokens": 2050
+    },
+    {
+      "i": 47,
+      "correct": false,
+      "pred": " \"traveler\"",
+      "gold": [
+        "ESPKW",
+        "IPDFD",
+        "NCSXV",
+        "YUZIE"
+      ],
+      "n_tokens": 2049
+    },
+    {
+      "i": 48,
+      "correct": false,
+      "pred": " \"VAR108.",
+      "gold": [
+        "DXHWN",
+        "SKCSO",
+        "UWLVI",
+        "YSJUB"
+      ],
+      "n_tokens": 2045
+    },
+    {
+      "i": 49,
+      "correct": false,
+      "pred": " \"wood\" is equal to \"the\"",
+      "gold": [
+        "ADZBW",
+        "LQOQS",
+        "MDXUX",
+        "MDZCK"
+      ],
+      "n_tokens": 2049
+    }
+  ]
+}

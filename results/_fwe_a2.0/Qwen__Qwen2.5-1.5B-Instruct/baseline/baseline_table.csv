@@ -1,0 +1,3 @@
+task,length,band,acc,ci_lo,ci_hi,n
+fwe,1024,none,0.15,0.0,0.3,20
+fwe,4096,none,0.3,0.1,0.5,20

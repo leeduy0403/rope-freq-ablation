@@ -1,0 +1,393 @@
+{
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "dtype": "torch.float16",
+  "versions": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu128",
+    "transformers": "5.16.1",
+    "numpy": "2.1.3",
+    "cuda": "12.8"
+  },
+  "config_hash": "f2f8513420bc",
+  "seed": 1234,
+  "filler": "synthetic",
+  "depth_fraction": 0.5,
+  "rotary_dim": 128,
+  "n_bands": 8,
+  "task": "s_niah",
+  "task_params": {
+    "n_distractors": 0
+  },
+  "length": 2048,
+  "n_examples": 50,
+  "band": 0,
+  "mode": "compress",
+  "compress_factor": 32.0,
+  "band_dims": [
+    0,
+    8
+  ],
+  "wavelength_range": [
+    6.283185307179586,
+    28.47278098481965
+  ],
+  "accuracy": 0.0,
+  "ci95": [
+    0.0,
+    0.0
+  ],
+  "wall_seconds": 51.08,
+  "examples": [
+    {
+      "i": 0,
+      "correct": false,
+      "pred": " \"magic\"",
+      "gold": "2631534",
+      "n_tokens": 2049
+    },
+    {
+      "i": 1,
+      "correct": false,
+      "pred": " \"magic\"3\".",
+      "gold": "3103422",
+      "n_tokens": 2048
+    },
+    {
+      "i": 2,
+      "correct": false,
+      "pred": " \"magic\"",
+      "gold": "6801743",
+      "n_tokens": 2047
+    },
+    {
+      "i": 3,
+      "correct": false,
+      "pred": " \"special-qu.",
+      "gold": "7825378",
+      "n_tokens": 2051
+    },
+    {
+      "i": 4,
+      "correct": false,
+      "pred": " 73.",
+      "gold": "7958397",
+      "n_tokens": 2051
+    },
+    {
+      "i": 5,
+      "correct": false,
+      "pred": " \"83\"",
+      "gold": "8545739",
+      "n_tokens": 2049
+    },
+    {
+      "i": 6,
+      "correct": false,
+      "pred": " 899.",
+      "gold": "8947699",
+      "n_tokens": 2044
+    },
+    {
+      "i": 7,
+      "correct": false,
+      "pred": " 8",
+      "gold": "3883850",
+      "n_tokens": 2050
+    },
+    {
+      "i": 8,
+      "correct": false,
+      "pred": " \"magic\"",
+      "gold": "2620463",
+      "n_tokens": 2046
+    },
+    {
+      "i": 9,
+      "correct": false,
+      "pred": " 8.",
+      "gold": "7989584",
+      "n_tokens": 2044
+    },
+    {
+      "i": 10,
+      "correct": false,
+      "pred": " \"magic\"",
+      "gold": "9549554",
+      "n_tokens": 2048
+    },
+    {
+      "i": 11,
+      "correct": false,
+      "pred": " \"8\"",
+      "gold": "1838750",
+      "n_tokens": 2043
+    },
+    {
+      "i": 12,
+      "correct": false,
+      "pred": " \"magic\"",
+      "gold": "5819048",
+      "n_tokens": 2045
+    },
+    {
+      "i": 13,
+      "correct": false,
+      "pred": " \"80.",
+      "gold": "5828140",
+      "n_tokens": 2050
+    },
+    {
+      "i": 14,
+      "correct": false,
+      "pred": " \"magic\"",
+      "gold": "1345933",
+      "n_tokens": 2045
+    },
+    {
+      "i": 15,
+      "correct": false,
+      "pred": " 8.",
+      "gold": "4187462",
+      "n_tokens": 2046
+    },
+    {
+      "i": 16,
+      "correct": false,
+      "pred": " \"magic\"3\".",
+      "gold": "4037654",
+      "n_tokens": 2049
+    },
+    {
+      "i": 17,
+      "correct": false,
+      "pred": " \"special\"34\".",
+      "gold": "7359146",
+      "n_tokens": 2046
+    },
+    {
+      "i": 18,
+      "correct": false,
+      "pred": " \"magic\"",
+      "gold": "1135042",
+      "n_tokens": 2050
+    },
+    {
+      "i": 19,
+      "correct": false,
+      "pred": " \"magic\" is hidden\"",
+      "gold": "9164505",
+      "n_tokens": 2045
+    },
+    {
+      "i": 20,
+      "correct": false,
+      "pred": " \"magic\" quartoquer34\".",
+      "gold": "3972477",
+      "n_tokens": 2046
+    },
+    {
+      "i": 21,
+      "correct": false,
+      "pred": " \"magic\"",
+      "gold": "6189013",
+      "n_tokens": 2048
+    },
+    {
+      "i": 22,
+      "correct": false,
+      "pred": " \"42.\"",
+      "gold": "4344621",
+      "n_tokens": 2053
+    },
+    {
+      "i": 23,
+      "correct": false,
+      "pred": " \"special-number-8\".",
+      "gold": "5907865",
+      "n_tokens": 2048
+    },
+    {
+      "i": 24,
+      "correct": false,
+      "pred": " \"magic\"",
+      "gold": "5080619",
+      "n_tokens": 2047
+    },
+    {
+      "i": 25,
+      "correct": false,
+      "pred": " \"magic\"",
+      "gold": "8449380",
+      "n_tokens": 2045
+    },
+    {
+      "i": 26,
+      "correct": false,
+      "pred": " 8.",
+      "gold": "8634509",
+      "n_tokens": 2050
+    },
+    {
+      "i": 27,
+      "correct": false,
+      "pred": " \"magic\"",
+      "gold": "6527290",
+      "n_tokens": 2051
+    },
+    {
+      "i": 28,
+      "correct": false,
+      "pred": " \"magic\"",
+      "gold": "1648770",
+      "n_tokens": 2051
+    },
+    {
+      "i": 29,
+      "correct": false,
+      "pred": " \"81\"",
+      "gold": "7581910",
+      "n_tokens": 2051
+    },
+    {
+      "i": 30,
+      "correct": false,
+      "pred": " 82.",
+      "gold": "8023726",
+      "n_tokens": 2049
+    },
+    {
+      "i": 31,
+      "correct": false,
+      "pred": " \"special-qu.",
+      "gold": "7829097",
+      "n_tokens": 2046
+    },
+    {
+      "i": 32,
+      "correct": false,
+      "pred": " \"special-magic\"",
+      "gold": "4168714",
+      "n_tokens": 2047
+    },
+    {
+      "i": 33,
+      "correct": false,
+      "pred": " 4.",
+      "gold": "2645731",
+      "n_tokens": 2048
+    },
+    {
+      "i": 34,
+      "correct": false,
+      "pred": " \"special-anchor\"",
+      "gold": "5902503",
+      "n_tokens": 2053
+    },
+    {
+      "i": 35,
+      "correct": false,
+      "pred": " \"magic\"",
+      "gold": "2714501",
+      "n_tokens": 2045
+    },
+    {
+      "i": 36,
+      "correct": false,
+      "pred": " **\"special-number**.",
+      "gold": "3695573",
+      "n_tokens": 2052
+    },
+    {
+      "i": 37,
+      "correct": false,
+      "pred": " \"magic\"",
+      "gold": "6693381",
+      "n_tokens": 2047
+    },
+    {
+      "i": 38,
+      "correct": false,
+      "pred": " \"magic\"",
+      "gold": "9632779",
+      "n_tokens": 2046
+    },
+    {
+      "i": 39,
+      "correct": false,
+      "pred": " \"magic\"",
+      "gold": "1669908",
+      "n_tokens": 2051
+    },
+    {
+      "i": 40,
+      "correct": false,
+      "pred": " 705.",
+      "gold": "7755407",
+      "n_tokens": 2047
+    },
+    {
+      "i": 41,
+      "correct": false,
+      "pred": " 8.",
+      "gold": "2478099",
+      "n_tokens": 2048
+    },
+    {
+      "i": 42,
+      "correct": false,
+      "pred": " \"magic\" 8\".",
+      "gold": "4232889",
+      "n_tokens": 2053
+    },
+    {
+      "i": 43,
+      "correct": false,
+      "pred": " \"specialbend.\"",
+      "gold": "4846697",
+      "n_tokens": 2054
+    },
+    {
+      "i": 44,
+      "correct": false,
+      "pred": " \"8\"8\".",
+      "gold": "2889624",
+      "n_tokens": 2052
+    },
+    {
+      "i": 45,
+      "correct": false,
+      "pred": " \"magic\"",
+      "gold": "9303265",
+      "n_tokens": 2044
+    },
+    {
+      "i": 46,
+      "correct": false,
+      "pred": " \"magic\" snow.\"",
+      "gold": "9911259",
+      "n_tokens": 2047
+    },
+    {
+      "i": 47,
+      "correct": false,
+      "pred": " 5.",
+      "gold": "5579530",
+      "n_tokens": 2044
+    },
+    {
+      "i": 48,
+      "correct": false,
+      "pred": " 5.",
+      "gold": "5590476",
+      "n_tokens": 2048
+    },
+    {
+      "i": 49,
+      "correct": false,
+      "pred": " 91.",
+      "gold": "5998111",
+      "n_tokens": 2051
+    }
+  ]
+}

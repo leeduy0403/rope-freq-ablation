@@ -1,0 +1,393 @@
+{
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "dtype": "torch.float16",
+  "versions": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu128",
+    "transformers": "5.16.1",
+    "numpy": "2.1.3",
+    "cuda": "12.8"
+  },
+  "config_hash": "f2f8513420bc",
+  "seed": 1234,
+  "filler": "synthetic",
+  "depth_fraction": 0.5,
+  "rotary_dim": 128,
+  "n_bands": 8,
+  "task": "mk_niah",
+  "task_params": {
+    "n_distractors": 3
+  },
+  "length": 1024,
+  "n_examples": 50,
+  "band": 7,
+  "mode": "compress",
+  "compress_factor": 32.0,
+  "band_dims": [
+    56,
+    64
+  ],
+  "wavelength_range": [
+    1117325.8624365912,
+    5063255.784002332
+  ],
+  "accuracy": 1.0,
+  "ci95": [
+    1.0,
+    1.0
+  ],
+  "wall_seconds": 33.88,
+  "examples": [
+    {
+      "i": 0,
+      "correct": true,
+      "pred": " 2631534.",
+      "gold": "2631534",
+      "n_tokens": 1026
+    },
+    {
+      "i": 1,
+      "correct": true,
+      "pred": " **3103422**.",
+      "gold": "3103422",
+      "n_tokens": 1021
+    },
+    {
+      "i": 2,
+      "correct": true,
+      "pred": " 6801743.",
+      "gold": "6801743",
+      "n_tokens": 1022
+    },
+    {
+      "i": 3,
+      "correct": true,
+      "pred": " 7825378.",
+      "gold": "7825378",
+      "n_tokens": 1025
+    },
+    {
+      "i": 4,
+      "correct": true,
+      "pred": " 7958397.",
+      "gold": "7958397",
+      "n_tokens": 1027
+    },
+    {
+      "i": 5,
+      "correct": true,
+      "pred": " 8545739.",
+      "gold": "8545739",
+      "n_tokens": 1027
+    },
+    {
+      "i": 6,
+      "correct": true,
+      "pred": " 8947699.",
+      "gold": "8947699",
+      "n_tokens": 1022
+    },
+    {
+      "i": 7,
+      "correct": true,
+      "pred": " 3883850.",
+      "gold": "3883850",
+      "n_tokens": 1026
+    },
+    {
+      "i": 8,
+      "correct": true,
+      "pred": " 2620463.",
+      "gold": "2620463",
+      "n_tokens": 1018
+    },
+    {
+      "i": 9,
+      "correct": true,
+      "pred": " 7989584.",
+      "gold": "7989584",
+      "n_tokens": 1029
+    },
+    {
+      "i": 10,
+      "correct": true,
+      "pred": " 9549554.",
+      "gold": "9549554",
+      "n_tokens": 1020
+    },
+    {
+      "i": 11,
+      "correct": true,
+      "pred": " 1838750.",
+      "gold": "1838750",
+      "n_tokens": 1022
+    },
+    {
+      "i": 12,
+      "correct": true,
+      "pred": " 5819048.",
+      "gold": "5819048",
+      "n_tokens": 1022
+    },
+    {
+      "i": 13,
+      "correct": true,
+      "pred": " 5828140.",
+      "gold": "5828140",
+      "n_tokens": 1027
+    },
+    {
+      "i": 14,
+      "correct": true,
+      "pred": " 1345933.",
+      "gold": "1345933",
+      "n_tokens": 1028
+    },
+    {
+      "i": 15,
+      "correct": true,
+      "pred": " 4187462.",
+      "gold": "4187462",
+      "n_tokens": 1020
+    },
+    {
+      "i": 16,
+      "correct": true,
+      "pred": " 4037654.",
+      "gold": "4037654",
+      "n_tokens": 1019
+    },
+    {
+      "i": 17,
+      "correct": true,
+      "pred": " 7359146.",
+      "gold": "7359146",
+      "n_tokens": 1021
+    },
+    {
+      "i": 18,
+      "correct": true,
+      "pred": " **1135042**.",
+      "gold": "1135042",
+      "n_tokens": 1027
+    },
+    {
+      "i": 19,
+      "correct": true,
+      "pred": " 9164505.",
+      "gold": "9164505",
+      "n_tokens": 1023
+    },
+    {
+      "i": 20,
+      "correct": true,
+      "pred": " 3972477.",
+      "gold": "3972477",
+      "n_tokens": 1023
+    },
+    {
+      "i": 21,
+      "correct": true,
+      "pred": " 6189013.",
+      "gold": "6189013",
+      "n_tokens": 1023
+    },
+    {
+      "i": 22,
+      "correct": true,
+      "pred": " 4344621.",
+      "gold": "4344621",
+      "n_tokens": 1025
+    },
+    {
+      "i": 23,
+      "correct": true,
+      "pred": " 5907865.",
+      "gold": "5907865",
+      "n_tokens": 1022
+    },
+    {
+      "i": 24,
+      "correct": true,
+      "pred": " 5080619.",
+      "gold": "5080619",
+      "n_tokens": 1023
+    },
+    {
+      "i": 25,
+      "correct": true,
+      "pred": " **8449380**.",
+      "gold": "8449380",
+      "n_tokens": 1025
+    },
+    {
+      "i": 26,
+      "correct": true,
+      "pred": " 8634509.",
+      "gold": "8634509",
+      "n_tokens": 1026
+    },
+    {
+      "i": 27,
+      "correct": true,
+      "pred": " 6527290.",
+      "gold": "6527290",
+      "n_tokens": 1021
+    },
+    {
+      "i": 28,
+      "correct": true,
+      "pred": " 1648770.",
+      "gold": "1648770",
+      "n_tokens": 1028
+    },
+    {
+      "i": 29,
+      "correct": true,
+      "pred": " 7581910.",
+      "gold": "7581910",
+      "n_tokens": 1022
+    },
+    {
+      "i": 30,
+      "correct": true,
+      "pred": " 8023726.",
+      "gold": "8023726",
+      "n_tokens": 1019
+    },
+    {
+      "i": 31,
+      "correct": true,
+      "pred": " 7829097.",
+      "gold": "7829097",
+      "n_tokens": 1018
+    },
+    {
+      "i": 32,
+      "correct": true,
+      "pred": " 4168714.",
+      "gold": "4168714",
+      "n_tokens": 1029
+    },
+    {
+      "i": 33,
+      "correct": true,
+      "pred": " 2645731.",
+      "gold": "2645731",
+      "n_tokens": 1018
+    },
+    {
+      "i": 34,
+      "correct": true,
+      "pred": " 5902503.",
+      "gold": "5902503",
+      "n_tokens": 1021
+    },
+    {
+      "i": 35,
+      "correct": true,
+      "pred": " 2714501.",
+      "gold": "2714501",
+      "n_tokens": 1021
+    },
+    {
+      "i": 36,
+      "correct": true,
+      "pred": " 3695573.",
+      "gold": "3695573",
+      "n_tokens": 1023
+    },
+    {
+      "i": 37,
+      "correct": true,
+      "pred": " 6693381.",
+      "gold": "6693381",
+      "n_tokens": 1025
+    },
+    {
+      "i": 38,
+      "correct": true,
+      "pred": " 9632779.",
+      "gold": "9632779",
+      "n_tokens": 1020
+    },
+    {
+      "i": 39,
+      "correct": true,
+      "pred": " 1669908.",
+      "gold": "1669908",
+      "n_tokens": 1020
+    },
+    {
+      "i": 40,
+      "correct": true,
+      "pred": " 7755407.",
+      "gold": "7755407",
+      "n_tokens": 1020
+    },
+    {
+      "i": 41,
+      "correct": true,
+      "pred": " 2478099.",
+      "gold": "2478099",
+      "n_tokens": 1020
+    },
+    {
+      "i": 42,
+      "correct": true,
+      "pred": " 4232889.",
+      "gold": "4232889",
+      "n_tokens": 1025
+    },
+    {
+      "i": 43,
+      "correct": true,
+      "pred": " 4846697.",
+      "gold": "4846697",
+      "n_tokens": 1026
+    },
+    {
+      "i": 44,
+      "correct": true,
+      "pred": " 2889624.",
+      "gold": "2889624",
+      "n_tokens": 1020
+    },
+    {
+      "i": 45,
+      "correct": true,
+      "pred": " 9303265.",
+      "gold": "9303265",
+      "n_tokens": 1023
+    },
+    {
+      "i": 46,
+      "correct": true,
+      "pred": " 9911259.",
+      "gold": "9911259",
+      "n_tokens": 1023
+    },
+    {
+      "i": 47,
+      "correct": true,
+      "pred": " 5579530.",
+      "gold": "5579530",
+      "n_tokens": 1022
+    },
+    {
+      "i": 48,
+      "correct": true,
+      "pred": " 5590476.",
+      "gold": "5590476",
+      "n_tokens": 1022
+    },
+    {
+      "i": 49,
+      "correct": true,
+      "pred": " 5998111.",
+      "gold": "5998111",
+      "n_tokens": 1026
+    }
+  ]
+}

@@ -1,0 +1,644 @@
+{
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "dtype": "torch.float16",
+  "versions": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu128",
+    "transformers": "5.16.1",
+    "numpy": "2.1.3",
+    "cuda": "12.8"
+  },
+  "config_hash": "f2f8513420bc",
+  "seed": 1234,
+  "filler": "synthetic",
+  "depth_fraction": 0.5,
+  "rotary_dim": 128,
+  "n_bands": 8,
+  "task": "vt",
+  "task_params": {
+    "n_hops": 4,
+    "ordered": false
+  },
+  "length": 2048,
+  "n_examples": 50,
+  "band": 0,
+  "mode": "compress",
+  "compress_factor": 2.0,
+  "band_dims": [
+    0,
+    8
+  ],
+  "wavelength_range": [
+    6.283185307179586,
+    28.47278098481965
+  ],
+  "accuracy": 0.0,
+  "ci95": [
+    0.0,
+    0.0
+  ],
+  "wall_seconds": 97.58,
+  "examples": [
+    {
+      "i": 0,
+      "correct": false,
+      "pred": " MK=2777, ZLBF=277, ZBZT=277, ZVT=27.",
+      "gold": [
+        "ASVWT",
+        "JZTFZ",
+        "KZLBX",
+        "MKDET"
+      ],
+      "n_tokens": 2044
+    },
+    {
+      "i": 1,
+      "correct": false,
+      "pred": " \nVARZJLQ=APJC, ZVAKPZTAPC, VZBZDZAC, VZGZFC.",
+      "gold": [
+        "APZJC",
+        "IIKLP",
+        "SPSDF",
+        "TQMUF"
+      ],
+      "n_tokens": 2049
+    },
+    {
+      "i": 2,
+      "correct": false,
+      "pred": " \nVARJX=11111\nVARW=11111\nVARZ=1111",
+      "gold": [
+        "GYRVA",
+        "LIXBR",
+        "WJBCQ",
+        "WTJUP"
+      ],
+      "n_tokens": 2051
+    },
+    {
+      "i": 3,
+      "correct": false,
+      "pred": " \nVARPLGK=BAR\nVARRSB=BAR\nVARC=BAR\nVARD=BAR",
+      "gold": [
+        "BPLVC",
+        "BRSAR",
+        "CMZKK",
+        "PGLKG"
+      ],
+      "n_tokens": 2044
+    },
+    {
+      "i": 4,
+      "correct": false,
+      "pred": " \nVARHMO = 51073\nVARJFS = 5126\nVARJF = 517\nVARM =51",
+      "gold": [
+        "JDHFS",
+        "MUDHO",
+        "QJQIB",
+        "WWYNC"
+      ],
+      "n_tokens": 2045
+    },
+    {
+      "i": 5,
+      "correct": false,
+      "pred": " \nVARXU=OC, VARY, VAX, VAY",
+      "gold": [
+        "GRJUX",
+        "OCNSK",
+        "PHOUZ",
+        "YXATX"
+      ],
+      "n_tokens": 2043
+    },
+    {
+      "i": 6,
+      "correct": false,
+      "pred": " \nVARGL = 5927\nVTG = 592\nDB = 592\nGL =592",
+      "gold": [
+        "DBGLX",
+        "RJTGT",
+        "RSFBZ",
+        "VTGTV"
+      ],
+      "n_tokens": 2050
+    },
+    {
+      "i": 7,
+      "correct": false,
+      "pred": " \nVARJWYD=6480\nVARND=680\nVARFHW=68\nVARND=68",
+      "gold": [
+        "CQHLE",
+        "FJDHW",
+        "QNDGY",
+        "VULET"
+      ],
+      "n_tokens": 2043
+    },
+    {
+      "i": 8,
+      "correct": false,
+      "pred": " \nVARON=286\nVARL=28\nVARR=26",
+      "gold": [
+        "FRONV",
+        "IRDLB",
+        "TKBXD",
+        "WYYQN"
+      ],
+      "n_tokens": 2042
+    },
+    {
+      "i": 9,
+      "correct": false,
+      "pred": " \nVARQZ = 6999 VARW = 699 VARY =699 VAR =699",
+      "gold": [
+        "BJXRF",
+        "KYSUX",
+        "VTICQ",
+        "WQOEZ"
+      ],
+      "n_tokens": 2048
+    },
+    {
+      "i": 10,
+      "correct": false,
+      "pred": " \nVARJRH=IK=736\nVARJ=73\nVARJ=73",
+      "gold": [
+        "BMMUR",
+        "IKJRH",
+        "SADCW",
+        "WTSAR"
+      ],
+      "n_tokens": 2043
+    },
+    {
+      "i": 11,
+      "correct": false,
+      "pred": " \nVARFG = 7111\nVARPRM = 711\nVARRJ = 71\nVARF =71",
+      "gold": [
+        "GDIVM",
+        "JRZAA",
+        "PRFGM",
+        "YEKMV"
+      ],
+      "n_tokens": 2045
+    },
+    {
+      "i": 12,
+      "correct": false,
+      "pred": " \nVARUDD=756\nVARG=75\nVARH=76\nVAR=7",
+      "gold": [
+        "IFIOP",
+        "NEQAI",
+        "URGDY",
+        "XNXBM"
+      ],
+      "n_tokens": 2049
+    },
+    {
+      "i": 13,
+      "correct": false,
+      "pred": " \nVARUZJG=17, VARZJ=18, VARJ=1, J=1",
+      "gold": [
+        "DXBUA",
+        "LCFMD",
+        "VSUVC",
+        "ZLJGU"
+      ],
+      "n_tokens": 2051
+    },
+    {
+      "i": 14,
+      "correct": false,
+      "pred": " \nVARIS = 2518\nVAR = 236\nVAR 27 = 23\nVAR 2 =25",
+      "gold": [
+        "OTKKW",
+        "XISDJ",
+        "YBJNN",
+        "YMKBK"
+      ],
+      "n_tokens": 2051
+    },
+    {
+      "i": 15,
+      "correct": false,
+      "pred": " BTM (BTMuseum), BTM (B, BTM), BTM (BTM), BTM (BTM, BT).",
+      "gold": [
+        "BTAGM",
+        "OHLDZ",
+        "PLOKN",
+        "WDKDI"
+      ],
+      "n_tokens": 2043
+    },
+    {
+      "i": 16,
+      "correct": false,
+      "pred": " \nVARJZG=8000\nVARJY=8000\nVARZJ=8000",
+      "gold": [
+        "LMYDR",
+        "QQLPL",
+        "YGPVB",
+        "ZJNGY"
+      ],
+      "n_tokens": 2043
+    },
+    {
+      "i": 17,
+      "correct": false,
+      "pred": " CHEO=92, CHEO98, CHE9, CHE9",
+      "gold": [
+        "CHEXO",
+        "FNCLS",
+        "HQJRQ",
+        "RWEML"
+      ],
+      "n_tokens": 2045
+    },
+    {
+      "i": 18,
+      "correct": false,
+      "pred": " \nVARAS = 61209\nXCCH =6157\nXCCH =68\nXCCH =616",
+      "gold": [
+        "BWOZM",
+        "CDASL",
+        "LCPGH",
+        "XCXCH"
+      ],
+      "n_tokens": 2043
+    },
+    {
+      "i": 19,
+      "correct": false,
+      "pred": " \nVARAUX=274, VARU=274, VARX=7, VAR=74",
+      "gold": [
+        "DOAUY",
+        "KTYTY",
+        "MQKZB",
+        "RJTZP"
+      ],
+      "n_tokens": 2045
+    },
+    {
+      "i": 20,
+      "correct": false,
+      "pred": " \nVARUW = 31207, VARX = 3156, VARY =3131, VARVW=310.",
+      "gold": [
+        "CUVHA",
+        "QOQAD",
+        "QYINK",
+        "WARDB"
+      ],
+      "n_tokens": 2048
+    },
+    {
+      "i": 21,
+      "correct": false,
+      "pred": " LBJVAR, LBJ, LBJL, and LB.",
+      "gold": [
+        "JXVVT",
+        "LBVJY",
+        "LYORT",
+        "NAAEH"
+      ],
+      "n_tokens": 2048
+    },
+    {
+      "i": 22,
+      "correct": false,
+      "pred": " \nVARHRU=397, HR=ER, UVRH=397, UERH=39.",
+      "gold": [
+        "ERHRU",
+        "HTOPL",
+        "UVVPR",
+        "WOHBW"
+      ],
+      "n_tokens": 2045
+    },
+    {
+      "i": 23,
+      "correct": false,
+      "pred": "VARYBN=584,YR=UWF,V=BI=Y,BI=58.",
+      "gold": [
+        "AYJBN",
+        "JELZK",
+        "UBIWF",
+        "YSNRT"
+      ],
+      "n_tokens": 2051
+    },
+    {
+      "i": 24,
+      "correct": false,
+      "pred": " VARNQ=HYPS=957,VARQ=UN=957,VARQHY=95,VARQUN=95",
+      "gold": [
+        "EIQBQ",
+        "GBLRI",
+        "HYQPS",
+        "UNNOL"
+      ],
+      "n_tokens": 2047
+    },
+    {
+      "i": 25,
+      "correct": false,
+      "pred": " \nVARWHVW=691\nVARWHV=61\nVARVW=61\nVARW=6",
+      "gold": [
+        "DNBCD",
+        "KARAJ",
+        "UVSWA",
+        "WWHXV"
+      ],
+      "n_tokens": 2051
+    },
+    {
+      "i": 26,
+      "correct": false,
+      "pred": " \nVARUNY = OF = 9999.9\nLX = 99999.\nGUW = 99999.",
+      "gold": [
+        "GUUNW",
+        "LHXNY",
+        "LXMPF",
+        "YOFDI"
+      ],
+      "n_tokens": 2052
+    },
+    {
+      "i": 27,
+      "correct": false,
+      "pred": " VAROHD=7081,VARQ=7081VAR=701,VAR=781.",
+      "gold": [
+        "AIOJH",
+        "AUQRT",
+        "CXRSF",
+        "OOKTD"
+      ],
+      "n_tokens": 2053
+    },
+    {
+      "i": 28,
+      "correct": false,
+      "pred": " \nVARSWF=WF=841\nVARX=84\nVARC=84\nVAR=8",
+      "gold": [
+        "CIXLQ",
+        "QSWVO",
+        "WFUKF",
+        "XXPXC"
+      ],
+      "n_tokens": 2046
+    },
+    {
+      "i": 29,
+      "correct": false,
+      "pred": " VARIZ=92, CRQ=EAZI, CRQ=EF, CRQ=CR.",
+      "gold": [
+        "CRQEO",
+        "EAIZF",
+        "KIXBC",
+        "YKMQJ"
+      ],
+      "n_tokens": 2047
+    },
+    {
+      "i": 30,
+      "correct": false,
+      "pred": " \nVARJZP=31, VARJXH=31, VARJG=3, VARN=3",
+      "gold": [
+        "NPNRG",
+        "WQQHR",
+        "XIJQD",
+        "ZJWIP"
+      ],
+      "n_tokens": 2045
+    },
+    {
+      "i": 31,
+      "correct": false,
+      "pred": " \nVARQSUHUY=827, VARUZSUX=83, VARXUYS=8, VARY=8",
+      "gold": [
+        "HTVWY",
+        "MAXQN",
+        "SUTHK",
+        "SUZHU"
+      ],
+      "n_tokens": 2047
+    },
+    {
+      "i": 32,
+      "correct": false,
+      "pred": " \nVARUSW=785\nVARQ=785\nVARUH=85\nVARB=8",
+      "gold": [
+        "HUGFX",
+        "KIQBE",
+        "LBHKR",
+        "WUSWW"
+      ],
+      "n_tokens": 2048
+    },
+    {
+      "i": 33,
+      "correct": false,
+      "pred": " VARFTS=857,VARFCT=85,VARC87,VAR85.",
+      "gold": [
+        "FCTSJ",
+        "GKMXO",
+        "LUZDB",
+        "UCSRA"
+      ],
+      "n_tokens": 2052
+    },
+    {
+      "i": 34,
+      "correct": false,
+      "pred": " \nVARZI=806, ZWUW=896, WU=896, V=86",
+      "gold": [
+        "GQGUG",
+        "IMCLL",
+        "QTZUP",
+        "QWIWY"
+      ],
+      "n_tokens": 2050
+    },
+    {
+      "i": 35,
+      "correct": false,
+      "pred": " \nVARXS = 1257\nVARXV = 9\nVARX = 15\nVAR = 0",
+      "gold": [
+        "BASXJ",
+        "EUNSJ",
+        "UQHOM",
+        "VGVRQ"
+      ],
+      "n_tokens": 2052
+    },
+    {
+      "i": 36,
+      "correct": false,
+      "pred": " \nVARQFY=5999\nUOGD=QFY\nRCLOUDO\nRCLOUGD",
+      "gold": [
+        "HNLWY",
+        "QOUFY",
+        "RCZLO",
+        "UDOGD"
+      ],
+      "n_tokens": 2043
+    },
+    {
+      "i": 37,
+      "correct": false,
+      "pred": " \nVARNOE=PRE=PRE=VARJZ=VARZ=VAR=VAR=VARVARVARVARVARVARVARVARVARVARVARVARVARVARVARVARVARVARVARVAR",
+      "gold": [
+        "EAGPY",
+        "JBJPA",
+        "MJZJC",
+        "PRENO"
+      ],
+      "n_tokens": 2046
+    },
+    {
+      "i": 38,
+      "correct": false,
+      "pred": " \nVARXWV=TW=4100, VARZK=4100, VAW=40.",
+      "gold": [
+        "GVVHT",
+        "TWXLF",
+        "UHEDN",
+        "ZRGKI"
+      ],
+      "n_tokens": 2051
+    },
+    {
+      "i": 39,
+      "correct": false,
+      "pred": " PCOC=7772, PCO=772, PCO=72, PC=7.",
+      "gold": [
+        "EXYPJ",
+        "HUIPW",
+        "NGOMH",
+        "PCOCC"
+      ],
+      "n_tokens": 2050
+    },
+    {
+      "i": 40,
+      "correct": false,
+      "pred": " VARTIJF, EZJE, EZ, and EZ.",
+      "gold": [
+        "EZDJE",
+        "QBWTO",
+        "URIDO",
+        "ZTIJF"
+      ],
+      "n_tokens": 2047
+    },
+    {
+      "i": 41,
+      "correct": false,
+      "pred": " \nVARVGX=981\nVTO=981\nVARG=91\nD=9",
+      "gold": [
+        "DJTNF",
+        "DUDUN",
+        "VDGTO",
+        "XIPTW"
+      ],
+      "n_tokens": 2044
+    },
+    {
+      "i": 42,
+      "correct": false,
+      "pred": " \nVARRRRJ=61072, VARRRJ=6173, VARJ=615, J=61",
+      "gold": [
+        "DDJVT",
+        "GRRUJ",
+        "SWLHX",
+        "SZWJV"
+      ],
+      "n_tokens": 2043
+    },
+    {
+      "i": 43,
+      "correct": false,
+      "pred": " \nVARPXE=1118\nVXWRK=118\nRVLK=18\nVRKU=18",
+      "gold": [
+        "KAWUO",
+        "PXEWR",
+        "RSKVL",
+        "VFSCH"
+      ],
+      "n_tokens": 2053
+    },
+    {
+      "i": 44,
+      "correct": false,
+      "pred": " \nVARON=887\nCNB=87\nYRZ=87\nE=8",
+      "gold": [
+        "CNONB",
+        "EFSYN",
+        "QVDCU",
+        "YRPVZ"
+      ],
+      "n_tokens": 2049
+    },
+    {
+      "i": 45,
+      "correct": false,
+      "pred": " \nVARCHG = 1500\nRRY = 70\nGG = 150\nGGI =150",
+      "gold": [
+        "GGIXP",
+        "RRCHY",
+        "SGWYH",
+        "ZHLGL"
+      ],
+      "n_tokens": 2046
+    },
+    {
+      "i": 46,
+      "correct": false,
+      "pred": " \nVARKCXPT=827\nUWTS=87\nTFS87\nThe first one is VARKCPT87 which is assigned the value 827",
+      "gold": [
+        "TFSZA",
+        "UYWWT",
+        "VYAVH",
+        "XKCPT"
+      ],
+      "n_tokens": 2050
+    },
+    {
+      "i": 47,
+      "correct": false,
+      "pred": " \nVARCSV=61\nVARC=6\nVARCS=6\nVAR=6",
+      "gold": [
+        "ESPKW",
+        "IPDFD",
+        "NCSXV",
+        "YUZIE"
+      ],
+      "n_tokens": 2049
+    },
+    {
+      "i": 48,
+      "correct": false,
+      "pred": " \nVARHWN=862\nDXW=86\nDX=UWI\nDX=86",
+      "gold": [
+        "DXHWN",
+        "SKCSO",
+        "UWLVI",
+        "YSJUB"
+      ],
+      "n_tokens": 2045
+    },
+    {
+      "i": 49,
+      "correct": false,
+      "pred": " \nVARQ8 = 164\nVARL = 8\nVAR = 14\nVAR = 1",
+      "gold": [
+        "ADZBW",
+        "LQOQS",
+        "MDXUX",
+        "MDZCK"
+      ],
+      "n_tokens": 2049
+    }
+  ]
+}

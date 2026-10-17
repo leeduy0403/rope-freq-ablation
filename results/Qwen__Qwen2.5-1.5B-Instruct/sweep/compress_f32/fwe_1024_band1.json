@@ -1,0 +1,594 @@
+{
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "dtype": "torch.float16",
+  "versions": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu128",
+    "transformers": "5.16.1",
+    "numpy": "2.1.3",
+    "cuda": "12.8"
+  },
+  "config_hash": "f2f8513420bc",
+  "seed": 1234,
+  "filler": "synthetic",
+  "depth_fraction": 0.5,
+  "rotary_dim": 128,
+  "n_bands": 8,
+  "task": "fwe",
+  "task_params": {
+    "alpha": 3.0,
+    "vocab_size": 500
+  },
+  "length": 1024,
+  "n_examples": 50,
+  "band": 1,
+  "mode": "compress",
+  "compress_factor": 32.0,
+  "band_dims": [
+    8,
+    16
+  ],
+  "wavelength_range": [
+    35.332947841000355,
+    160.1142018743125
+  ],
+  "accuracy": 0.34,
+  "ci95": [
+    0.2,
+    0.48
+  ],
+  "wall_seconds": 48.01,
+  "examples": [
+    {
+      "i": 0,
+      "correct": true,
+      "pred": " \n1. camifo\n2. sujepo\n3. fizije",
+      "gold": [
+        "camifo",
+        "fizije",
+        "sujepo"
+      ],
+      "n_tokens": 1024
+    },
+    {
+      "i": 1,
+      "correct": false,
+      "pred": " \n1. genaha\n2. genaha\n3. kiraze",
+      "gold": [
+        "genaha",
+        "kiraze",
+        "riguna"
+      ],
+      "n_tokens": 1023
+    },
+    {
+      "i": 2,
+      "correct": false,
+      "pred": " \n1. fide\n2. nopafu\n3. fide",
+      "gold": [
+        "fide",
+        "mebapi",
+        "nopafu"
+      ],
+      "n_tokens": 1023
+    },
+    {
+      "i": 3,
+      "correct": false,
+      "pred": " \n1. vahoco\n2. vahoco\n3. halifu",
+      "gold": [
+        "halifu",
+        "noki",
+        "vahoco"
+      ],
+      "n_tokens": 1023
+    },
+    {
+      "i": 4,
+      "correct": false,
+      "pred": " \"jofeli\", \"vosuza\", \"jofeli\".",
+      "gold": [
+        "jofeli",
+        "lilu",
+        "vosuza"
+      ],
+      "n_tokens": 1023
+    },
+    {
+      "i": 5,
+      "correct": false,
+      "pred": " \n1. cajilu\n2. cajilu\n3. volo",
+      "gold": [
+        "cajilu",
+        "vilo",
+        "volo"
+      ],
+      "n_tokens": 1025
+    },
+    {
+      "i": 6,
+      "correct": true,
+      "pred": " \n1. sufi\n2. hado\n3. feva",
+      "gold": [
+        "feva",
+        "hado",
+        "sufi"
+      ],
+      "n_tokens": 1023
+    },
+    {
+      "i": 7,
+      "correct": false,
+      "pred": " \n1. pupipo\n2. rehi\n3. keruda",
+      "gold": [
+        "karu",
+        "pupipo",
+        "rehi"
+      ],
+      "n_tokens": 1024
+    },
+    {
+      "i": 8,
+      "correct": true,
+      "pred": " \"zugela\", \"rekadu\", \"bago\".",
+      "gold": [
+        "bago",
+        "rekadu",
+        "zugela"
+      ],
+      "n_tokens": 1024
+    },
+    {
+      "i": 9,
+      "correct": false,
+      "pred": " nice, seca, seca",
+      "gold": [
+        "kida",
+        "nice",
+        "seca"
+      ],
+      "n_tokens": 1024
+    },
+    {
+      "i": 10,
+      "correct": false,
+      "pred": " \n1. Galafo\n2. Vabeco\n3. Hebuvo",
+      "gold": [
+        "dure",
+        "galafo",
+        "vabeco"
+      ],
+      "n_tokens": 1024
+    },
+    {
+      "i": 11,
+      "correct": false,
+      "pred": " \"hososa\", \"kebata\", and \"mupe\".",
+      "gold": [
+        "hososa",
+        "kebata",
+        "retuvo"
+      ],
+      "n_tokens": 1023
+    },
+    {
+      "i": 12,
+      "correct": false,
+      "pred": " \n1. tocotu\n2. kizeta\n3. tocotu",
+      "gold": [
+        "fikito",
+        "kizeta",
+        "tocotu"
+      ],
+      "n_tokens": 1023
+    },
+    {
+      "i": 13,
+      "correct": false,
+      "pred": " \n1. zivecu\n2. dega\n3. zivecu",
+      "gold": [
+        "dega",
+        "goco",
+        "zivecu"
+      ],
+      "n_tokens": 1024
+    },
+    {
+      "i": 14,
+      "correct": false,
+      "pred": " \n1. \"rapoka\"\n2. \"dononu\"\n3. \"juzipe\"",
+      "gold": [
+        "bugo",
+        "dononu",
+        "rapoka"
+      ],
+      "n_tokens": 1023
+    },
+    {
+      "i": 15,
+      "correct": true,
+      "pred": "  \n1. \"desode\" - 24 times  \n2. \"move\" - 15 times  \n3. \"vame\"",
+      "gold": [
+        "desode",
+        "move",
+        "vame"
+      ],
+      "n_tokens": 1023
+    },
+    {
+      "i": 16,
+      "correct": true,
+      "pred": " \n1. \"jigu\"\n2. \"nili\"\n3. \"vebepa\"",
+      "gold": [
+        "jigu",
+        "nili",
+        "vebepa"
+      ],
+      "n_tokens": 1024
+    },
+    {
+      "i": 17,
+      "correct": true,
+      "pred": " \"jiro\", \"taso\", and \"pava\".",
+      "gold": [
+        "jiro",
+        "pava",
+        "taso"
+      ],
+      "n_tokens": 1024
+    },
+    {
+      "i": 18,
+      "correct": true,
+      "pred": " \n1. todo\n2. tike\n3. lola",
+      "gold": [
+        "lola",
+        "tike",
+        "todo"
+      ],
+      "n_tokens": 1024
+    },
+    {
+      "i": 19,
+      "correct": true,
+      "pred": "  \n1. faziva  \n2. lufu  \n3. hokono",
+      "gold": [
+        "faziva",
+        "hokono",
+        "lufu"
+      ],
+      "n_tokens": 1023
+    },
+    {
+      "i": 20,
+      "correct": true,
+      "pred": " duhe, fani, vate",
+      "gold": [
+        "duhe",
+        "fani",
+        "vate"
+      ],
+      "n_tokens": 1023
+    },
+    {
+      "i": 21,
+      "correct": false,
+      "pred": " \n1. cojipe\n2. cojipe\n3. cojipe",
+      "gold": [
+        "cojipe",
+        "higika",
+        "meja"
+      ],
+      "n_tokens": 1024
+    },
+    {
+      "i": 22,
+      "correct": false,
+      "pred": " \n1. ruse\n2. cududu\n3. ruse",
+      "gold": [
+        "cududu",
+        "jusu",
+        "ruse"
+      ],
+      "n_tokens": 1023
+    },
+    {
+      "i": 23,
+      "correct": false,
+      "pred": " \n1. \"dobugu\"\n2. \"vimojo\"\n3. \"codeze\"",
+      "gold": [
+        "dobugu",
+        "gozo",
+        "vimojo"
+      ],
+      "n_tokens": 1025
+    },
+    {
+      "i": 24,
+      "correct": false,
+      "pred": " rebefa, memusi, and zatu.",
+      "gold": [
+        "lucu",
+        "memusi",
+        "rebefa"
+      ],
+      "n_tokens": 1023
+    },
+    {
+      "i": 25,
+      "correct": true,
+      "pred": " pute, samota, and tefe.",
+      "gold": [
+        "pute",
+        "samota",
+        "tefe"
+      ],
+      "n_tokens": 1024
+    },
+    {
+      "i": 26,
+      "correct": true,
+      "pred": " \"diduno\", \"nuho\", and \"vekozu\".",
+      "gold": [
+        "diduno",
+        "nuho",
+        "vekozu"
+      ],
+      "n_tokens": 1023
+    },
+    {
+      "i": 27,
+      "correct": false,
+      "pred": "  \n1. zuzifo  \n2. zuzifo  \n3. keji",
+      "gold": [
+        "keji",
+        "pule",
+        "zuzifo"
+      ],
+      "n_tokens": 1023
+    },
+    {
+      "i": 28,
+      "correct": false,
+      "pred": "  \n1. farife  \n2. riteda  \n3. farife",
+      "gold": [
+        "farife",
+        "riteda",
+        "vabelo"
+      ],
+      "n_tokens": 1024
+    },
+    {
+      "i": 29,
+      "correct": false,
+      "pred": " \n1. tiji\n2. tiji\n3. heru",
+      "gold": [
+        "heru",
+        "mejeci",
+        "tiji"
+      ],
+      "n_tokens": 1023
+    },
+    {
+      "i": 30,
+      "correct": false,
+      "pred": " \"kila\", \"vivesi\", \"vivesi\".",
+      "gold": [
+        "cevu",
+        "kila",
+        "vivesi"
+      ],
+      "n_tokens": 1024
+    },
+    {
+      "i": 31,
+      "correct": false,
+      "pred": "  \n1. fomi  \n2. rizoli  \n3. fomi",
+      "gold": [
+        "beluze",
+        "fomi",
+        "rizoli"
+      ],
+      "n_tokens": 1023
+    },
+    {
+      "i": 32,
+      "correct": false,
+      "pred": " \n1. Feliko\n2. Zena\n3. Sadupe",
+      "gold": [
+        "dubobi",
+        "feliko",
+        "zena"
+      ],
+      "n_tokens": 1024
+    },
+    {
+      "i": 33,
+      "correct": false,
+      "pred": " \n1. \"cuzeti\"\n2. \"kope\"\n3. \"vife\"",
+      "gold": [
+        "cuzeti",
+        "kope",
+        "zebo"
+      ],
+      "n_tokens": 1023
+    },
+    {
+      "i": 34,
+      "correct": false,
+      "pred": " \n1. \"sabu\"\n2. \"tibodo\"\n3. \"lofefi\"",
+      "gold": [
+        "sabu",
+        "sose",
+        "tibodo"
+      ],
+      "n_tokens": 1024
+    },
+    {
+      "i": 35,
+      "correct": false,
+      "pred": " \"jega\", \"gule\", \"gule\"",
+      "gold": [
+        "cetu",
+        "gule",
+        "jega"
+      ],
+      "n_tokens": 1023
+    },
+    {
+      "i": 36,
+      "correct": false,
+      "pred": " \n1. tipe\n2. tipe\n3. kesuri",
+      "gold": [
+        "kesuri",
+        "poko",
+        "tipe"
+      ],
+      "n_tokens": 1024
+    },
+    {
+      "i": 37,
+      "correct": false,
+      "pred": " \"zeka\", \"gije\", \"zeka\"",
+      "gold": [
+        "gije",
+        "jepu",
+        "zeka"
+      ],
+      "n_tokens": 1024
+    },
+    {
+      "i": 38,
+      "correct": false,
+      "pred": " \n1. lofo\n2. buga\n3. lofo",
+      "gold": [
+        "buga",
+        "lofo",
+        "loka"
+      ],
+      "n_tokens": 1024
+    },
+    {
+      "i": 39,
+      "correct": false,
+      "pred": " \n1. liji\n2. fofo\n3. liji",
+      "gold": [
+        "fofo",
+        "hegeso",
+        "liji"
+      ],
+      "n_tokens": 1024
+    },
+    {
+      "i": 40,
+      "correct": true,
+      "pred": " \n1. loje (24 times)\n2. logepo (18 times)\n3. jani (15 times)",
+      "gold": [
+        "jani",
+        "logepo",
+        "loje"
+      ],
+      "n_tokens": 1024
+    },
+    {
+      "i": 41,
+      "correct": true,
+      "pred": " \"degala\", \"pere\", and \"tugi\".",
+      "gold": [
+        "degala",
+        "pere",
+        "tugi"
+      ],
+      "n_tokens": 1023
+    },
+    {
+      "i": 42,
+      "correct": false,
+      "pred": " \"tomece\", \"femele\", and \"zuto\".",
+      "gold": [
+        "femelo",
+        "tomece",
+        "zuva"
+      ],
+      "n_tokens": 1024
+    },
+    {
+      "i": 43,
+      "correct": false,
+      "pred": " \n1. bozuka\n2. bozuka\n3. fagiha",
+      "gold": [
+        "bozuka",
+        "cijo",
+        "fagiha"
+      ],
+      "n_tokens": 1025
+    },
+    {
+      "i": 44,
+      "correct": false,
+      "pred": "  \n1. jicu  \n2. jicu  \n3. poru",
+      "gold": [
+        "jicu",
+        "poru",
+        "veri"
+      ],
+      "n_tokens": 1023
+    },
+    {
+      "i": 45,
+      "correct": true,
+      "pred": " \"nope\", \"datubu\", and \"tuka\".",
+      "gold": [
+        "datubu",
+        "nope",
+        "tuka"
+      ],
+      "n_tokens": 1023
+    },
+    {
+      "i": 46,
+      "correct": true,
+      "pred": "  \n1. zede (24 times)  \n2. fotako (15 times)  \n3. jifa (10 times)",
+      "gold": [
+        "fotako",
+        "jifa",
+        "zede"
+      ],
+      "n_tokens": 1024
+    },
+    {
+      "i": 47,
+      "correct": true,
+      "pred": " \"pesa\", \"mecehu\", \"ficusu\".",
+      "gold": [
+        "ficusu",
+        "mecehu",
+        "pesa"
+      ],
+      "n_tokens": 1024
+    },
+    {
+      "i": 48,
+      "correct": true,
+      "pred": " \n1. \"soharu\"\n2. \"cobo\"\n3. \"necu\"",
+      "gold": [
+        "cobo",
+        "necu",
+        "soharu"
+      ],
+      "n_tokens": 1023
+    },
+    {
+      "i": 49,
+      "correct": false,
+      "pred": " \n1. \"seti\"\n2. \"zoto\"\n3. \"jivoho\"",
+      "gold": [
+        "seti",
+        "vazu",
+        "zoto"
+      ],
+      "n_tokens": 1024
+    }
+  ]
+}
