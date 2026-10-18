@@ -4,7 +4,7 @@ IT4772 (NLP), Topic 12 — *Long-context LLMs: which RoPE frequency bands does e
 
 Method: for each band of rotary frequencies, compress `theta_i -> theta_i / f` **in place** on a loaded model (one `inv_freq` buffer, all heads), measure the accuracy drop on RULER-style synthetic tasks within the native context, then overlay with the analytical compression profile of each extension method.
 
-Spec: `docs/rope-frequency-ablation-guide.md`.
+Spec: `docs/rope-frequency-ablation-guide.md`. **Report: [`REPORT.md`](REPORT.md).**
 
 ## Setup
 
