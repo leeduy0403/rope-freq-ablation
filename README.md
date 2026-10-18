@@ -67,6 +67,6 @@ Run 1 (Kaggle T4, Qwen2.5-1.5B-Instruct, fp16, lengths 1024/2048/4096, n=50, com
 
 Run 2a (`notebooks/kaggle_long.ipynb`, 8192, s_niah/vt/fwe, n=50): G4 passes. vt's band-4 drop grows with length — −0.02 / +0.04 / +0.18 / +0.34 at 1k/2k/4k/8k (relative to baseline: 0 / 6% / 26% / 59%) — while s_niah stays flat; band 5 (λ ≥ 35k) is still ≈0 at 8k. See `figures/*D7_shift*`.
 
-Run 2b (16384): reduced design (vt + s_niah, bands 3–7, n≈30 after a timing probe) — a full run would take ~19 h on T4.
+Run 2b (16384, vt + s_niah, bands 3–7, n=50): the math-kernel OOM was fixed by forcing SDPA's memory-efficient kernel (`model_io.configure_attention`); re-running the 4096 baseline with the new kernel matched the old results on 100% of examples (`kernel_check_4096.json`). G4 passes. vt band 4 stays the most important of bands 3–7 (+0.30*, 48% of baseline); band 5 (λ 35k–160k) is still ≈0, so the "wavelength ≈ L" reading holds and band 5 has not started to matter at 16k. Unexplained: vt band 6 (λ 199k–900k) +0.18* at 16k only, with band 5 null — isolated, treat as unreplicated (22 of 115 band-1–7 cells are significant; ~3 false positives expected).
 
-Analysis notes: drop CIs are paired bootstrap (same examples in every band); D4 is reported with and without band 0; Spearman is identical across scales for NTK/YaRN by construction; PI is uniform → NaN.
+Analysis notes: at 16384 only bands 3–7 were run, so compare D4 across lengths on bands 3–7. Drop CIs are paired bootstrap (same examples in every band); D4 is reported with and without band 0; Spearman is identical across scales for NTK/YaRN by construction; PI is uniform → NaN.
