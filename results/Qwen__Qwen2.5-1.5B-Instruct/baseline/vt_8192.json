@@ -1,0 +1,638 @@
+{
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "dtype": "torch.float16",
+  "versions": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu128",
+    "transformers": "5.16.1",
+    "numpy": "2.1.3",
+    "cuda": "12.8"
+  },
+  "config_hash": "f2f8513420bc",
+  "seed": 1234,
+  "filler": "synthetic",
+  "depth_fraction": 0.5,
+  "rotary_dim": 128,
+  "n_bands": 8,
+  "task": "vt",
+  "task_params": {
+    "n_hops": 4,
+    "ordered": false
+  },
+  "length": 8192,
+  "n_examples": 50,
+  "band": null,
+  "mode": "compress",
+  "compress_factor": 32.0,
+  "band_dims": null,
+  "wavelength_range": null,
+  "accuracy": 0.58,
+  "ci95": [
+    0.44,
+    0.72
+  ],
+  "wall_seconds": 691.71,
+  "examples": [
+    {
+      "i": 0,
+      "correct": false,
+      "pred": " \n\nVAR MKDET = 29747  \nVAR JZTFZ = 29747  \nVAR MKDET = 29747  \nVAR ASVWT",
+      "gold": [
+        "ASVWT",
+        "JZTFZ",
+        "KZLBX",
+        "MKDET"
+      ],
+      "n_tokens": 8195
+    },
+    {
+      "i": 1,
+      "correct": true,
+      "pred": " \n\nVAR APZJC = 52210  \nVAR IIKLP = TQMUF  \nVAR SPSDF = APZJC  \nVAR TQMUF = IIKLP",
+      "gold": [
+        "APZJC",
+        "IIKLP",
+        "SPSDF",
+        "TQMUF"
+      ],
+      "n_tokens": 8189
+    },
+    {
+      "i": 2,
+      "correct": false,
+      "pred": " \n\nWTJUP (VAR), \nLIXBR (VAR),\nWJBCQ (VAR), \nLIXBR (VAR).",
+      "gold": [
+        "GYRVA",
+        "LIXBR",
+        "WJBCQ",
+        "WTJUP"
+      ],
+      "n_tokens": 8195
+    },
+    {
+      "i": 3,
+      "correct": true,
+      "pred": " \n\nVAR BPLVC = 89765.\nVAR CMZKK = PGLKG.\nVAR BRSAR = BPLVC.\nVAR PGLKG = BRSAR.",
+      "gold": [
+        "BPLVC",
+        "BRSAR",
+        "CMZKK",
+        "PGLKG"
+      ],
+      "n_tokens": 8189
+    },
+    {
+      "i": 4,
+      "correct": true,
+      "pred": " \n\nVAR MUDHO = 58191\n\nVAR WWYNC = QJQIB\n\nVAR JDHFS = MUDHO\n\nVAR QJQIB = JDHFS",
+      "gold": [
+        "JDHFS",
+        "MUDHO",
+        "QJQIB",
+        "WWYNC"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 5,
+      "correct": true,
+      "pred": " \n\nVAR PHOUZ = 69979  \nVAR OCNSK = PHOUZ  \nVAR YXATX = OCNSK  \nVAR GRJUX = YXAT",
+      "gold": [
+        "GRJUX",
+        "OCNSK",
+        "PHOUZ",
+        "YXATX"
+      ],
+      "n_tokens": 8197
+    },
+    {
+      "i": 6,
+      "correct": false,
+      "pred": " \n\nVAR DBGLX = 59932\n\nThis is the only instance where the number 59932 appears as a variable name in the given text.",
+      "gold": [
+        "DBGLX",
+        "RJTGT",
+        "RSFBZ",
+        "VTGTV"
+      ],
+      "n_tokens": 8194
+    },
+    {
+      "i": 7,
+      "correct": false,
+      "pred": " \n\nVAR FJDHW = 67480  \nVAR QNDGY = 67480  \nVAR CQHLE = 67480  \nVAR V",
+      "gold": [
+        "CQHLE",
+        "FJDHW",
+        "QNDGY",
+        "VULET"
+      ],
+      "n_tokens": 8191
+    },
+    {
+      "i": 8,
+      "correct": true,
+      "pred": " \n\nVAR FRONV = 24886  \nVAR TKBXD = FRONV  \nVAR WYYQN = IRDLB  \nVAR IRDLB = TKBXD",
+      "gold": [
+        "FRONV",
+        "IRDLB",
+        "TKBXD",
+        "WYYQN"
+      ],
+      "n_tokens": 8188
+    },
+    {
+      "i": 9,
+      "correct": false,
+      "pred": " \n\nVAR BJXRF = 62909\n\nThis is the only occurrence of the number 62909 in the given text.",
+      "gold": [
+        "BJXRF",
+        "KYSUX",
+        "VTICQ",
+        "WQOEZ"
+      ],
+      "n_tokens": 8187
+    },
+    {
+      "i": 10,
+      "correct": true,
+      "pred": " \n\nVAR IKJRH = 74316  \nVAR SADCW = BMMUR  \nVAR BMMUR = WTSAR  \nVAR WTSAR = IKJRH",
+      "gold": [
+        "BMMUR",
+        "IKJRH",
+        "SADCW",
+        "WTSAR"
+      ],
+      "n_tokens": 8191
+    },
+    {
+      "i": 11,
+      "correct": false,
+      "pred": " \n\nVAR PRFGM = 72191  \nVAR JRZAA = 72191  \nVAR YEKMV = 72191  \nVAR GDIV",
+      "gold": [
+        "GDIVM",
+        "JRZAA",
+        "PRFGM",
+        "YEKMV"
+      ],
+      "n_tokens": 8186
+    },
+    {
+      "i": 12,
+      "correct": false,
+      "pred": " \n\nVAR URGDY = 71574\n\nThis is the only occurrence of the number 71574 in the given text.",
+      "gold": [
+        "IFIOP",
+        "NEQAI",
+        "URGDY",
+        "XNXBM"
+      ],
+      "n_tokens": 8193
+    },
+    {
+      "i": 13,
+      "correct": true,
+      "pred": " \n\nVAR VSUVC = 21175\n\nVAR LCFMD = ZLJGU\n\nVAR ZLJGU = DXBUA\n\nVAR DXBUA = VSU",
+      "gold": [
+        "DXBUA",
+        "LCFMD",
+        "VSUVC",
+        "ZLJGU"
+      ],
+      "n_tokens": 8188
+    },
+    {
+      "i": 14,
+      "correct": false,
+      "pred": " \n\n1. VAR YBJNN = 22530.\n2. VAR OTKKW = YMKBK.\n3. VAR YMKBK = YBJNN.\n4. VAR",
+      "gold": [
+        "OTKKW",
+        "XISDJ",
+        "YBJNN",
+        "YMKBK"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 15,
+      "correct": true,
+      "pred": " \n\nVAR BTAGM = 89710  \nVAR OHLDZ = WDKDI  \nVAR PLOKN = OHLDZ  \nVAR WDKDI = BTAGM",
+      "gold": [
+        "BTAGM",
+        "OHLDZ",
+        "PLOKN",
+        "WDKDI"
+      ],
+      "n_tokens": 8189
+    },
+    {
+      "i": 16,
+      "correct": false,
+      "pred": " \n\nVAR ZJNGY = 84010.\nVAR YGPVB = ZJNGY.\nVAR LMYDR = YGPVB.\nVAR LMYDR = YGP",
+      "gold": [
+        "LMYDR",
+        "QQLPL",
+        "YGPVB",
+        "ZJNGY"
+      ],
+      "n_tokens": 8187
+    },
+    {
+      "i": 17,
+      "correct": false,
+      "pred": " CHEXO, HQJRQ, FNCLS, and HQJRQ.",
+      "gold": [
+        "CHEXO",
+        "FNCLS",
+        "HQJRQ",
+        "RWEML"
+      ],
+      "n_tokens": 8188
+    },
+    {
+      "i": 18,
+      "correct": true,
+      "pred": " \n\nVAR XCXCH = 66183  \nVAR LCPGH = XCXCH  \nVAR BWOZM = LCPGH  \nVAR CDASL = BWOZ",
+      "gold": [
+        "BWOZM",
+        "CDASL",
+        "LCPGH",
+        "XCXCH"
+      ],
+      "n_tokens": 8188
+    },
+    {
+      "i": 19,
+      "correct": true,
+      "pred": " \n\nVAR KTYTY = 27724\n\nVAR RJTZP = DOAUY\n\nVAR DOAUY = KTYTY\n\nVAR MQKZB = RJTZP",
+      "gold": [
+        "DOAUY",
+        "KTYTY",
+        "MQKZB",
+        "RJTZP"
+      ],
+      "n_tokens": 8188
+    },
+    {
+      "i": 20,
+      "correct": false,
+      "pred": " \n\nVAR QOQAD = 38193  \nVAR QYINK = 38193  \nVAR WARDB = 38193  \nVAR CUV",
+      "gold": [
+        "CUVHA",
+        "QOQAD",
+        "QYINK",
+        "WARDB"
+      ],
+      "n_tokens": 8194
+    },
+    {
+      "i": 21,
+      "correct": false,
+      "pred": " \n\nVAR LBVJY = 24326\n\nThis is the only occurrence of this specific number in the given text.",
+      "gold": [
+        "JXVVT",
+        "LBVJY",
+        "LYORT",
+        "NAAEH"
+      ],
+      "n_tokens": 8187
+    },
+    {
+      "i": 22,
+      "correct": false,
+      "pred": " \n\nVAR ERHRU = 38917\n\nVAR UVVPR = ERHRU\n\nVAR WOHBW = HTOPL\n\nVAR TOPLH = WOHB",
+      "gold": [
+        "ERHRU",
+        "HTOPL",
+        "UVVPR",
+        "WOHBW"
+      ],
+      "n_tokens": 8190
+    },
+    {
+      "i": 23,
+      "correct": false,
+      "pred": " \n\nVAR AYJBN = 55894\n\nVAR UBIWF = AYJBN\n\nVAR JELZK = YSNRT\n\nVAR VQDZL",
+      "gold": [
+        "AYJBN",
+        "JELZK",
+        "UBIWF",
+        "YSNRT"
+      ],
+      "n_tokens": 8187
+    },
+    {
+      "i": 24,
+      "correct": true,
+      "pred": " \n\nVAR UNNOL = GBLRI  \nVAR EIQBQ = UNNOL  \nVAR HYQPS = 91537  \nVAR GBLRI = HYQPS",
+      "gold": [
+        "EIQBQ",
+        "GBLRI",
+        "HYQPS",
+        "UNNOL"
+      ],
+      "n_tokens": 8195
+    },
+    {
+      "i": 25,
+      "correct": true,
+      "pred": " \n\n- VAR WWHXV = 60941\n- VAR KARAJ = DNBCD (where DNBCD is derived from UVSWA)\n- VAR UVSW",
+      "gold": [
+        "DNBCD",
+        "KARAJ",
+        "UVSWA",
+        "WWHXV"
+      ],
+      "n_tokens": 8187
+    },
+    {
+      "i": 26,
+      "correct": true,
+      "pred": " \n\nVAR LXMPF = LHXNY  \nVAR LHXNY = 94909  \nVAR GUUNW = YOFDI  \nVAR YOFDI = LXMPF",
+      "gold": [
+        "GUUNW",
+        "LHXNY",
+        "LXMPF",
+        "YOFDI"
+      ],
+      "n_tokens": 8193
+    },
+    {
+      "i": 27,
+      "correct": true,
+      "pred": " \n\nVAR OOKTD = 78081  \nVAR CXRSF = AIOJH  \nVAR AUQRT = CXRSF  \nVAR OOKTD = 78",
+      "gold": [
+        "AIOJH",
+        "AUQRT",
+        "CXRSF",
+        "OOKTD"
+      ],
+      "n_tokens": 8189
+    },
+    {
+      "i": 28,
+      "correct": true,
+      "pred": " \n\nVAR WFUKF = 89481  \nVAR XXPXC = QSWVO  \nVAR QSWVO = CIXLQ  \nVAR CIXLQ = WFUK",
+      "gold": [
+        "CIXLQ",
+        "QSWVO",
+        "WFUKF",
+        "XXPXC"
+      ],
+      "n_tokens": 8188
+    },
+    {
+      "i": 29,
+      "correct": true,
+      "pred": " \n\nVAR EAIZF = 93232  \nVAR CRQEO = EAIZF  \nVAR KIXBC = CRQEO  \nVAR YKMQJ = KIXBC",
+      "gold": [
+        "CRQEO",
+        "EAIZF",
+        "KIXBC",
+        "YKMQJ"
+      ],
+      "n_tokens": 8187
+    },
+    {
+      "i": 30,
+      "correct": true,
+      "pred": " \n\nVAR ZJWIP = 63519  \nVAR WQQHR = NPNRG  \nVAR XIJQD = ZJWIP  \nVAR NPNRG = XI",
+      "gold": [
+        "NPNRG",
+        "WQQHR",
+        "XIJQD",
+        "ZJWIP"
+      ],
+      "n_tokens": 8189
+    },
+    {
+      "i": 31,
+      "correct": true,
+      "pred": " \n\nVAR MAXQN = 88237\n\nVAR HTVWY = SUZHU\n\nVAR SUTHK = MAXQN\n\nVAR SUZHU = SUTHK",
+      "gold": [
+        "HTVWY",
+        "MAXQN",
+        "SUTHK",
+        "SUZHU"
+      ],
+      "n_tokens": 8196
+    },
+    {
+      "i": 32,
+      "correct": true,
+      "pred": " \n\nVAR HUGFX = WUSWW  \nVAR WUSWW = 78853  \nVAR LBHKR = HUGFX  \nVAR KIQBE = LBHKR",
+      "gold": [
+        "HUGFX",
+        "KIQBE",
+        "LBHKR",
+        "WUSWW"
+      ],
+      "n_tokens": 8194
+    },
+    {
+      "i": 33,
+      "correct": true,
+      "pred": " \n\nVAR FCTSJ = 88507  \nVAR UCSRA = 88507  \nVAR LUZDB = UCSRA  \nVAR GKMXO = FCTSJ",
+      "gold": [
+        "FCTSJ",
+        "GKMXO",
+        "LUZDB",
+        "UCSRA"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 34,
+      "correct": true,
+      "pred": " \n\nVAR QWIWY = 89096\n\nVAR IMCLL = QWIWY\n\nVAR GQGUG = QTZUP\n\nVAR QTZUP = IM",
+      "gold": [
+        "GQGUG",
+        "IMCLL",
+        "QTZUP",
+        "QWIWY"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 35,
+      "correct": false,
+      "pred": " \n\n1. BASXJ (assigned directly)\n2. VGVRQ (assigned indirectly via BASXJ)\n3. UQHOM (assigned indirectly via VGVRQ)\n4. BAS",
+      "gold": [
+        "BASXJ",
+        "EUNSJ",
+        "UQHOM",
+        "VGVRQ"
+      ],
+      "n_tokens": 8191
+    },
+    {
+      "i": 36,
+      "correct": true,
+      "pred": " \n\nVAR QOUFY = 58989\n\nVAR HNLWY = RCZLO\n\nVAR UDOGD = QOUFY\n\nVAR RCZLO = UDOGD",
+      "gold": [
+        "HNLWY",
+        "QOUFY",
+        "RCZLO",
+        "UDOGD"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 37,
+      "correct": false,
+      "pred": " \n\n1. VAR MJZJC = 26442.\n2. VAR PRENO = EAGPY.\n3. VAR EAGPY = MJZJC.\n4. VAR MJ",
+      "gold": [
+        "EAGPY",
+        "JBJPA",
+        "MJZJC",
+        "PRENO"
+      ],
+      "n_tokens": 8195
+    },
+    {
+      "i": 38,
+      "correct": false,
+      "pred": " \n\nVAR TWXLF = 40150.\nVAR ZRGKI = GVVHT.\nVAR TWXLF = 40150.",
+      "gold": [
+        "GVVHT",
+        "TWXLF",
+        "UHEDN",
+        "ZRGKI"
+      ],
+      "n_tokens": 8186
+    },
+    {
+      "i": 39,
+      "correct": true,
+      "pred": " \n\nVAR PCOCC = 72702  \nVAR NGOMH = HUIPW  \nVAR EXYPJ = PCOCC  \nVAR HUIPW = EXYPJ",
+      "gold": [
+        "EXYPJ",
+        "HUIPW",
+        "NGOMH",
+        "PCOCC"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 40,
+      "correct": false,
+      "pred": " \n\nVAR EZDJE = 46482  \nVAR QBWTO = 46482  \nVAR URIDO = 46482  \nVAR EZDJE",
+      "gold": [
+        "EZDJE",
+        "QBWTO",
+        "URIDO",
+        "ZTIJF"
+      ],
+      "n_tokens": 8187
+    },
+    {
+      "i": 41,
+      "correct": false,
+      "pred": " \n\nVAR VDGTO = 95821\n\nVAR XIPTW = DUDUN\n\nVAR DJTNF = XIPTW\n\nVAR VIYXK = DJTNF",
+      "gold": [
+        "DJTNF",
+        "DUDUN",
+        "VDGTO",
+        "XIPTW"
+      ],
+      "n_tokens": 8189
+    },
+    {
+      "i": 42,
+      "correct": false,
+      "pred": " \n\nVAR GRRUJ = 68198\n\nVAR SWLHX = DDJVT\n\nVAR SZWJV = GRRUJ\n\nVAR ZZVXZ = SW",
+      "gold": [
+        "DDJVT",
+        "GRRUJ",
+        "SWLHX",
+        "SZWJV"
+      ],
+      "n_tokens": 8195
+    },
+    {
+      "i": 43,
+      "correct": true,
+      "pred": " \n\nVAR PXEWR = 19178\n\nVAR VFSCH = KAWUO\n\nVAR RSKVL = VFSCH\n\nVAR KAWUO = PXE",
+      "gold": [
+        "KAWUO",
+        "PXEWR",
+        "RSKVL",
+        "VFSCH"
+      ],
+      "n_tokens": 8187
+    },
+    {
+      "i": 44,
+      "correct": true,
+      "pred": " \n\nVAR CNONB = 28787\n\nVAR YRPVZ = EFSYN\n\nVAR QVDCU = QVDCU\n\nVAR EFSYN = Q",
+      "gold": [
+        "CNONB",
+        "EFSYN",
+        "QVDCU",
+        "YRPVZ"
+      ],
+      "n_tokens": 8186
+    },
+    {
+      "i": 45,
+      "correct": false,
+      "pred": " \n\nVAR RRCHY = 17505\n\nVAR GGIXP = 17505\n\nVAR ZHLGL = 17505\n\nVAR SGW",
+      "gold": [
+        "GGIXP",
+        "RRCHY",
+        "SGWYH",
+        "ZHLGL"
+      ],
+      "n_tokens": 8191
+    },
+    {
+      "i": 46,
+      "correct": true,
+      "pred": " \n\nVAR XKCPT = 84277.\nVAR TFSZA = UYWWT.\nVAR VYAVH = UYWWT.\nVAR UYWWT = TFSZA",
+      "gold": [
+        "TFSZA",
+        "UYWWT",
+        "VYAVH",
+        "XKCPT"
+      ],
+      "n_tokens": 8196
+    },
+    {
+      "i": 47,
+      "correct": true,
+      "pred": " \n\nVAR YUZIE = IPDFD  \nVAR ESPKW = 66417  \nVAR NCSXV = YUZIE  \nVAR IPDFD = ESPKW",
+      "gold": [
+        "ESPKW",
+        "IPDFD",
+        "NCSXV",
+        "YUZIE"
+      ],
+      "n_tokens": 8197
+    },
+    {
+      "i": 48,
+      "correct": true,
+      "pred": " \n\nVAR DXHWN = 87652.\nVAR SKCSO = UWLVI.\nVAR YSJUB = SKCSO.\nVAR UWLVI = DXHWN.",
+      "gold": [
+        "DXHWN",
+        "SKCSO",
+        "UWLVI",
+        "YSJUB"
+      ],
+      "n_tokens": 8196
+    },
+    {
+      "i": 49,
+      "correct": true,
+      "pred": " \n\nVAR LQOQS = 91664\n\nVAR MDZCK = MDXUX\n\nVAR ADZBW = LQOQS\n\nVAR MDXUX = ADZ",
+      "gold": [
+        "ADZBW",
+        "LQOQS",
+        "MDXUX",
+        "MDZCK"
+      ],
+      "n_tokens": 8191
+    }
+  ]
+}

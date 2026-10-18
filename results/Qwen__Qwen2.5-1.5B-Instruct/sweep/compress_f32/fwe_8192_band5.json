@@ -1,0 +1,594 @@
+{
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "dtype": "torch.float16",
+  "versions": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu128",
+    "transformers": "5.16.1",
+    "numpy": "2.1.3",
+    "cuda": "12.8"
+  },
+  "config_hash": "f2f8513420bc",
+  "seed": 1234,
+  "filler": "synthetic",
+  "depth_fraction": 0.5,
+  "rotary_dim": 128,
+  "n_bands": 8,
+  "task": "fwe",
+  "task_params": {
+    "alpha": 3.0,
+    "vocab_size": 500
+  },
+  "length": 8192,
+  "n_examples": 50,
+  "band": 5,
+  "mode": "compress",
+  "compress_factor": 32.0,
+  "band_dims": [
+    40,
+    48
+  ],
+  "wavelength_range": [
+    35332.94767908499,
+    160114.20199306152
+  ],
+  "accuracy": 0.36,
+  "ci95": [
+    0.22,
+    0.5
+  ],
+  "wall_seconds": 594.45,
+  "examples": [
+    {
+      "i": 0,
+      "correct": true,
+      "pred": " \n1. \"sujepo\"\n2. \"camifo\"\n3. \"fizije\"",
+      "gold": [
+        "camifo",
+        "fizije",
+        "sujepo"
+      ],
+      "n_tokens": 8191
+    },
+    {
+      "i": 1,
+      "correct": false,
+      "pred": " \"genaha\", \"kiraze\", and \"genaha\".",
+      "gold": [
+        "genaha",
+        "kiraze",
+        "riguna"
+      ],
+      "n_tokens": 8191
+    },
+    {
+      "i": 2,
+      "correct": false,
+      "pred": " \"nopafu\", \"fide\", and \"labiri\".",
+      "gold": [
+        "fide",
+        "mebapi",
+        "nopafu"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 3,
+      "correct": false,
+      "pred": " \"halifu\", \"tebagi\", and \"noki\".",
+      "gold": [
+        "halifu",
+        "palu",
+        "vahoco"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 4,
+      "correct": true,
+      "pred": " \"jofeli\", \"vosuza\", and \"lilu\".",
+      "gold": [
+        "jofeli",
+        "lilu",
+        "vosuza"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 5,
+      "correct": false,
+      "pred": " \"cailu\", \"volo\", and \"dope\".",
+      "gold": [
+        "cajilu",
+        "vilo",
+        "volo"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 6,
+      "correct": false,
+      "pred": " \n1. \"lemi\" - appears 20 times\n2. \"golofu\" - appears 18 times\n3",
+      "gold": [
+        "gilofu",
+        "lemi",
+        "zobapu"
+      ],
+      "n_tokens": 8191
+    },
+    {
+      "i": 7,
+      "correct": false,
+      "pred": " \"karu\", \"pupipo\", and \"keruda\".",
+      "gold": [
+        "karu",
+        "pupipo",
+        "rehi"
+      ],
+      "n_tokens": 8191
+    },
+    {
+      "i": 8,
+      "correct": true,
+      "pred": " \"zugela\", \"rekadu\", and \"bago\".",
+      "gold": [
+        "bago",
+        "rekadu",
+        "zugela"
+      ],
+      "n_tokens": 8191
+    },
+    {
+      "i": 9,
+      "correct": false,
+      "pred": " nice, nice, nice.",
+      "gold": [
+        "kida",
+        "nice",
+        "seca"
+      ],
+      "n_tokens": 8191
+    },
+    {
+      "i": 10,
+      "correct": true,
+      "pred": " \n\n1. galafo \n2. vabeco \n3. dure",
+      "gold": [
+        "dure",
+        "galafo",
+        "vabeco"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 11,
+      "correct": true,
+      "pred": " hososa, retuvo, and kebata.",
+      "gold": [
+        "hososa",
+        "kebata",
+        "retuvo"
+      ],
+      "n_tokens": 8191
+    },
+    {
+      "i": 12,
+      "correct": false,
+      "pred": " \n1. tocotu (appears 204 times)\n2. kizeta (appears 198 times)\n3",
+      "gold": [
+        "fikito",
+        "kizeta",
+        "tocotu"
+      ],
+      "n_tokens": 8191
+    },
+    {
+      "i": 13,
+      "correct": false,
+      "pred": " \"zivecu\", \"degak\", and \"goco\".",
+      "gold": [
+        "dega",
+        "goco",
+        "zivecu"
+      ],
+      "n_tokens": 8191
+    },
+    {
+      "i": 14,
+      "correct": true,
+      "pred": " \n\n1. \"rapoka\"\n2. \"dononu\"\n3. \"bugo\"",
+      "gold": [
+        "bugo",
+        "dononu",
+        "rapoka"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 15,
+      "correct": true,
+      "pred": " \"nide\", \"kerace\", and \"ceze\".",
+      "gold": [
+        "ceze",
+        "kerace",
+        "nide"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 16,
+      "correct": false,
+      "pred": " \"jigu\", \"nili\", and \"savoni\".",
+      "gold": [
+        "jigu",
+        "nili",
+        "vebepa"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 17,
+      "correct": true,
+      "pred": " \"taso\", \"jiro\", and \"pava\".",
+      "gold": [
+        "jiro",
+        "pava",
+        "taso"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 18,
+      "correct": false,
+      "pred": " \n1. \"tike\"\n2. \"lola\"\n3. \"zepogo\"\n\nThese words appear multiple times throughout the text, making",
+      "gold": [
+        "lola",
+        "tike",
+        "todo"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 19,
+      "correct": false,
+      "pred": " faziva, zomuli, lufu",
+      "gold": [
+        "faziva",
+        "hokono",
+        "lufu"
+      ],
+      "n_tokens": 8191
+    },
+    {
+      "i": 20,
+      "correct": true,
+      "pred": " \"fani\", \"vate\", and \"duhe\".",
+      "gold": [
+        "duhe",
+        "fani",
+        "vate"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 21,
+      "correct": false,
+      "pred": " \"higika\", \"cojipe\", and \"zido\".",
+      "gold": [
+        "cojipe",
+        "higika",
+        "meja"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 22,
+      "correct": false,
+      "pred": " \"ruse\", \"cududu\", and \"jibu\".",
+      "gold": [
+        "cududu",
+        "jusu",
+        "ruse"
+      ],
+      "n_tokens": 8191
+    },
+    {
+      "i": 23,
+      "correct": false,
+      "pred": " \"codeze\", \"dobugu\", and \"gozo\".",
+      "gold": [
+        "dobugu",
+        "gozo",
+        "vimojo"
+      ],
+      "n_tokens": 8193
+    },
+    {
+      "i": 24,
+      "correct": false,
+      "pred": " \n\n1. rebefa \n2. memusi \n3. rebefa",
+      "gold": [
+        "lucu",
+        "memusi",
+        "rebefa"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 25,
+      "correct": true,
+      "pred": " pute (appears 105 times), tefe (appears 98 times), and samota (appears 97 times",
+      "gold": [
+        "pute",
+        "samota",
+        "tefe"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 26,
+      "correct": true,
+      "pred": " \"diduno\", \"vekozu\", and \"nuho\".",
+      "gold": [
+        "diduno",
+        "nuho",
+        "vekozu"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 27,
+      "correct": true,
+      "pred": " \"keji\", \"pule\", and \"zuzifo\".",
+      "gold": [
+        "keji",
+        "pule",
+        "zuzifo"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 28,
+      "correct": false,
+      "pred": " \"rified\", \"vabelo\", and \"farife\".",
+      "gold": [
+        "farife",
+        "riteda",
+        "vabelo"
+      ],
+      "n_tokens": 8191
+    },
+    {
+      "i": 29,
+      "correct": false,
+      "pred": " \"heru\", \"zizoda\", and \"mejeci\".",
+      "gold": [
+        "heru",
+        "mejeci",
+        "tiji"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 30,
+      "correct": true,
+      "pred": " \"kila\", \"vivesi\", and \"cevu\".",
+      "gold": [
+        "cevu",
+        "kila",
+        "vivesi"
+      ],
+      "n_tokens": 8193
+    },
+    {
+      "i": 31,
+      "correct": true,
+      "pred": " \"fomi\", \"rizoli\", and \"beluze\".",
+      "gold": [
+        "beluze",
+        "fomi",
+        "rizoli"
+      ],
+      "n_tokens": 8191
+    },
+    {
+      "i": 32,
+      "correct": false,
+      "pred": " \n1. \"zena\"\n2. \"feliko\"\n3. \"sadupe\"",
+      "gold": [
+        "dubobi",
+        "feliko",
+        "zena"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 33,
+      "correct": false,
+      "pred": " \n1. \"kope\"\n2. \"cuzeti\"\n3. \"vife\"",
+      "gold": [
+        "cuzeti",
+        "kope",
+        "zebo"
+      ],
+      "n_tokens": 8191
+    },
+    {
+      "i": 34,
+      "correct": false,
+      "pred": " \n1. \"tibodo\"\n2. \"lofefi\"\n3. \"sabo\"",
+      "gold": [
+        "sabu",
+        "sose",
+        "tibodo"
+      ],
+      "n_tokens": 8191
+    },
+    {
+      "i": 35,
+      "correct": false,
+      "pred": " \"jega\", \"gule\", and \"gce\".",
+      "gold": [
+        "cetu",
+        "gule",
+        "jega"
+      ],
+      "n_tokens": 8191
+    },
+    {
+      "i": 36,
+      "correct": false,
+      "pred": " \"kesuri\", \"poko\", and \"gevala\".",
+      "gold": [
+        "kesuri",
+        "poko",
+        "tipe"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 37,
+      "correct": false,
+      "pred": " \"zeka\", \"jepu\", and \"kekame\".",
+      "gold": [
+        "gije",
+        "jepu",
+        "zeka"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 38,
+      "correct": false,
+      "pred": " buga, lofo, and lofo.",
+      "gold": [
+        "buga",
+        "lofo",
+        "loka"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 39,
+      "correct": false,
+      "pred": " \"liji\", \"liji\", and \"liji\".",
+      "gold": [
+        "fofo",
+        "hegeso",
+        "liji"
+      ],
+      "n_tokens": 8191
+    },
+    {
+      "i": 40,
+      "correct": false,
+      "pred": " \"logepo\", \"jani\", and \"pumi\".",
+      "gold": [
+        "jani",
+        "logepo",
+        "loje"
+      ],
+      "n_tokens": 8191
+    },
+    {
+      "i": 41,
+      "correct": true,
+      "pred": " \"degala\", \"tugi\", and \"pere\".",
+      "gold": [
+        "degala",
+        "pere",
+        "tugi"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 42,
+      "correct": true,
+      "pred": " femelo, tomece, zuva.",
+      "gold": [
+        "femelo",
+        "tomece",
+        "zuva"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 43,
+      "correct": false,
+      "pred": " \"fagiha\", \"bozuka\", and \"pinuku\".",
+      "gold": [
+        "bozuka",
+        "cijo",
+        "fagiha"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 44,
+      "correct": false,
+      "pred": " \"poru\", \"jicu\", and \"veri\".",
+      "gold": [
+        "jicu",
+        "poru",
+        "tocaji"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 45,
+      "correct": false,
+      "pred": " \"datubu\", \"tuka\", and \"nevu\".",
+      "gold": [
+        "datubu",
+        "nope",
+        "tuka"
+      ],
+      "n_tokens": 8191
+    },
+    {
+      "i": 46,
+      "correct": true,
+      "pred": " \"jifa\", \"zede\", and \"fotako\".",
+      "gold": [
+        "fotako",
+        "jifa",
+        "zede"
+      ],
+      "n_tokens": 8191
+    },
+    {
+      "i": 47,
+      "correct": true,
+      "pred": " pesa, ficusu, and mecehu.",
+      "gold": [
+        "ficusu",
+        "mecehu",
+        "pesa"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 48,
+      "correct": false,
+      "pred": " \"soharu\", \"cobo\", and \"nofuju\".",
+      "gold": [
+        "cobo",
+        "necu",
+        "soharu"
+      ],
+      "n_tokens": 8192
+    },
+    {
+      "i": 49,
+      "correct": false,
+      "pred": " \n1. \"seti\"\n2. \"zoto\"\n3. \"kelude\"",
+      "gold": [
+        "seti",
+        "vazu",
+        "zoto"
+      ],
+      "n_tokens": 8191
+    }
+  ]
+}

@@ -245,7 +245,8 @@ def main():
     print("\n" + df.to_string(index=False))
     if a.stage == "baseline":
         out = stage_dir(cfg, "baseline") / "baseline_table.csv"
-        df.to_csv(out, index=False)
+        every = [json.loads(p.read_text()) for p in sorted(out.parent.glob("*_*.json"))]
+        summarize(every).sort_values(["length", "task"]).to_csv(out, index=False)  # all lengths, not just this run
         print(f"saved -> {out}\n")
         gate_ok = gate_g2(cfg, df)
     else:

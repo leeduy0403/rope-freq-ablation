@@ -32,7 +32,7 @@ Open `notebooks/kaggle_run.ipynb` on Kaggle (*File → Import Notebook*), set **
 | 3b calibrate | `python -m src.eval.runner --stage sweep --tasks vt --lengths 2048 --factor 2` (then 8, 32) | `results/<model>/sweep/compress_f{2,8,32}/` | pick factor with readable dynamic range |
 | 3c sweep | `python -m src.eval.runner --stage sweep` | `results/<model>/sweep/compress_f8/*.json` | **G4**: band=none == baseline |
 | 4 profiles (CPU) | `python -m src.rope.methods --head-dim 64 --base 1000000 --l-orig 32768` | `results/compression_profile.csv` | unit tests pass |
-| 5 analysis | `python -m src.analyze.heatmap` / `python -m src.analyze.overlay --scale 4` | `figures/*D1*`, `figures/*D3*`, `results/<model>/D2_*.csv`, `D4_*.csv` | |
+| 5 analysis | `python -m src.analyze.heatmap` / `python -m src.analyze.overlay --scale 4` / `python -m src.analyze.shift` | `figures/*D1*`, `figures/*D3*`, `results/<model>/D2_*.csv`, `D4_*.csv` | |
 
 Common flags: `--model-id`, `--tasks`, `--lengths`, `--n`, `--bands`, `--mode {compress,zero}`, `--factor`, `--force`.
 
@@ -65,6 +65,8 @@ Run 1 (Kaggle T4, Qwen2.5-1.5B-Instruct, fp16, lengths 1024/2048/4096, n=50, com
 - vt: significant dependence on bands 1–4; fwe: bands 3–4. Band 4 (λ 6k–28k) only matters at 4096 → a band starts to matter once its wavelength approaches the context length.
 - D4 correlations with NTK/YaRN compression are negative (methods compress bands 5–7, which no task uses within ≤4k).
 
-Run 2 (`notebooks/kaggle_long.ipynb`): same setup at 8192 and 16384 to test the wavelength ≈ context-length effect.
+Run 2a (`notebooks/kaggle_long.ipynb`, 8192, s_niah/vt/fwe, n=50): G4 passes. vt's band-4 drop grows with length — −0.02 / +0.04 / +0.18 / +0.34 at 1k/2k/4k/8k (relative to baseline: 0 / 6% / 26% / 59%) — while s_niah stays flat; band 5 (λ ≥ 35k) is still ≈0 at 8k. See `figures/*D7_shift*`.
+
+Run 2b (16384): reduced design (vt + s_niah, bands 3–7, n≈30 after a timing probe) — a full run would take ~19 h on T4.
 
 Analysis notes: drop CIs are paired bootstrap (same examples in every band); D4 is reported with and without band 0; Spearman is identical across scales for NTK/YaRN by construction; PI is uniform → NaN.
