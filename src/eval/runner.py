@@ -65,6 +65,7 @@ class Runner:
             "model_id": cfg["model_id"],
             "model_revision": model_revision(self.model),
             "dtype": str(next(self.model.parameters()).dtype),
+            "attention": cfg.get("_attention"),
             "versions": lib_versions(),
             "config_hash": config_hash(cfg, HASH_KEYS),
             "seed": cfg["seed"],

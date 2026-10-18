@@ -5,6 +5,7 @@ revision: main
 dtype: auto                    # auto = bfloat16 if GPU supports it, else float16
 load_in_4bit: false            # enable only if VRAM-bound
 attn_implementation: sdpa
+sdpa_kernel: efficient         # see model_io.configure_attention; runs up to 8192 used the (silent) math fallback
 
 lengths: [1024, 2048, 4096]    # never exceed the model's native context
 n_examples: 50

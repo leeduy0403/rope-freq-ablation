@@ -12,8 +12,29 @@ def resolve_dtype(name):
     return getattr(torch, name)
 
 
+def configure_attention(cfg):
+    """Keep SDPA on the memory-efficient kernel.
+
+    With no attention mask, transformers passes enable_gqa=True to SDPA. On GPUs without
+    FlashAttention (T4 = sm75) the memory-efficient kernel does not support GQA, so PyTorch
+    silently falls back to the math kernel, which materialises the full fp32 L x L score
+    matrix (OOM at 16k, quadratic slowdown at 8k). Forcing transformers to repeat K/V lets the
+    memory-efficient kernel run; disabling the math backend turns any further fallback into an
+    error instead of a silent slowdown. Returns the setting recorded in result metadata.
+    """
+    mode = cfg.get("sdpa_kernel", "efficient")
+    if mode == "efficient" and torch.cuda.is_available():
+        import transformers.integrations.sdpa_attention as sdpa
+
+        sdpa.use_gqa_in_sdpa = lambda *args, **kwargs: False
+        torch.backends.cuda.enable_math_sdp(False)
+        return "sdpa-efficient(repeat_kv)"
+    return "sdpa-default"
+
+
 def load_model(cfg):
     dtype = resolve_dtype(cfg.get("dtype", "auto"))
+    cfg["_attention"] = configure_attention(cfg)
     kw = dict(revision=cfg.get("revision", "main"),
               attn_implementation=cfg.get("attn_implementation", "sdpa"))
     # transformers renamed torch_dtype -> dtype in 4.56
